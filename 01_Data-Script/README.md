@@ -43,6 +43,10 @@ let x;      // undefined
 ```js
 let y = null;
 ```
+ Difference between `null` and `undefined`
+> - `null` represents the intentional absence of any object value.
+> - `undefined` represents an uninitialized variable or a non-existent property.
+
 
 ### 1.6 Symbol (ES6)
 A `Symbol` is a unique and immutable data type often used as a key for object properties.
@@ -148,3 +152,4 @@ JavaScript is dynamically typed, meaning you don't need to specify the data type
 let value = 42;    // Initially a number
 value = 'Hello';   // Now a string
 ```
+
