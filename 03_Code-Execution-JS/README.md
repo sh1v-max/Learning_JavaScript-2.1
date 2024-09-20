@@ -42,6 +42,12 @@ function greet() {
 }
 ```
 
+*memory creation and code execution phase image overview*
+
+<p align="center">
+    <img src="./images/image.png" />
+</p>
+
 ## 3. Call Stack
 
 JavaScript has a **call stack** that tracks function calls. The **call stack** is a Last In, First Out (LIFO) structure.
