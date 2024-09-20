@@ -140,3 +140,6 @@ JavaScript is executed in a **JavaScript Engine** (such as V8 in Chrome). The en
 1. **Memory Heap**: Where memory allocation happens.
 2. **Call Stack**: Where execution contexts are managed.
 
+For more information about Code execution in JavaScript, visit: 
+> - [W3Schools](https://www.geeksforgeeks.org/javascript-code-execution/)
+> - [YouTube (Recommended)](https://www.youtube.com/watch?v=FMhPjmO0ziE&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=46&pp=iAQB)

@@ -96,3 +96,7 @@ value = true;      // now a boolean
 - Use meaningful variable names that convey the purpose of the variable.
 - Use `const` for variables that do not need to be reassigned, promoting immutability.
 
+For more information about Variables in JavaScript, visit: 
+> - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
+> - [W3Schools](https://www.w3schools.com/js/js_variables.asp)
+> - [YouTube (Recommended)](https://www.youtube.com/watch?v=RFx0PnTqxfI&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=45&pp=iAQB)

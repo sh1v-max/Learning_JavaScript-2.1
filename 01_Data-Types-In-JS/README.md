@@ -153,3 +153,7 @@ let value = 42;    // Initially a number
 value = 'Hello';   // Now a string
 ```
 
+For more information about Data Types in JavaScript, visit: 
+> - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+> - [W3Schools](https://www.w3schools.com/js/js_datatypes.asp)
+> - [YouTube (Recommended)](https://www.youtube.com/watch?v=-3H3XJHwzRI&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=44&pp=iAQB)

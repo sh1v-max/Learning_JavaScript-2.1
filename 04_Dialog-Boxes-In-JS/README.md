@@ -59,5 +59,8 @@ if (name !== null) {
 > 
 > - Dialog boxes have default styling and behavior that may vary slightly between browsers.
 > - For custom dialogs, consider using modal dialogs provided by UI frameworks like Bootstrap or custom JavaScript solutions.
-> 
-> 
+
+
+For more information about Dialog boxes in JavaScript, visit: 
+> - [W3Schools](https://www.w3schools.com/js/js_popup.asp)
+> - [YouTube (Recommended)](https://www.youtube.com/watch?v=RFx0PnTqxfI&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=45&pp=iAQB)
