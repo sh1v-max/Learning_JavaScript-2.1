@@ -142,3 +142,10 @@ console.log(a);  // 42 (because a is null, it's assigned the value of b)
 | `\|\|`   | Logical OR  | Returns true if **either** operand is true                       | `true \|\| false` (true)   |
 | `!`      | Logical NOT | Inverts the boolean value                                        | `!true` (false)            |
 | `??`     | Nullish     | Returns right-hand value if left-hand value is `null`/`undefined`| `null ?? 'hello'` (hello)  |
+
+
+
+For more information about Operators in JavaScript, visit: 
+> - [MDN Web Docs](https://www.w3schools.com/js/js_comparisons.asp)
+> - [W3Schools](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators)
+> - [YouTube (Recommended)](https://www.youtube.com/watch?v=hjSSoCRU_nc&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=52&pp=iAQB)

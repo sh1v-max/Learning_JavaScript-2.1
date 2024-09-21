@@ -106,7 +106,9 @@ if (score) {
 - **Falsy Values**: `false`, `0`, `-0`, `0n`, `""`, `null`, `undefined`, `NaN`.
 - **Truthy Values**: Everything else that is not falsy (e.g., non-empty strings, numbers other than 0, objects, arrays, etc.).
 
-For more information about Math in JavaScript, visit: 
+For more information about Truthy and Falsy in JavaScript, visit: 
+> - [MDN Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
+> - [MDN Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 > - [YouTube](https://www.youtube.com/watch?v=UPARgGhfb5E&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=50)
 
 

@@ -129,3 +129,8 @@ console.log(obj1 === obj2);  // true (same reference)
 | `>=`     | Greater than or equal         | `5 >= 5` (true) |
 | `<`      | Less than                     | `5 < 10` (true) |
 | `<=`     | Less than or equal            | `5 <= 5` (true) |
+
+For more information about Operators in JavaScript, visit: 
+> - [MDN Web Docs](https://www.w3schools.com/js/js_comparisons.asp)
+> - [W3Schools](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators)
+> - [YouTube (Recommended)](https://www.youtube.com/watch?v=HVhD13U5Bh0&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=51&pp=iAQB)
