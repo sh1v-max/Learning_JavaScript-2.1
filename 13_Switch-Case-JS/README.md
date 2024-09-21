@@ -194,3 +194,7 @@ You are a young adult.
 
 Switch cases are useful for decision-making when you need to compare the same variable to multiple values, especially for clear and structured comparisons.
 
+### For more information about Switch case in JavaScript, visit: 
+> - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
+> - [W3Schools](https://www.w3schools.com/js/js_if_else.asp)
+> - [YouTube (Recommended)](https://www.youtube.com/watch?v=ebJVbq6BDFI&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=56)
