@@ -1,185 +1,128 @@
-# Decision Making in JavaScript
+# Nested if-else in JavaScript
 
-Decision-making structures in JavaScript allow you to execute different blocks of code based on certain conditions. The most commonly used decision-making statements are `if`, `else`, `else if`, `switch`, and the ternary operator.
+A **nested if-else** statement is an `if` or `else if` statement placed inside another `if` or `else` block. This allows for more complex decision-making structures, where you can check multiple conditions that depend on previous ones.
 
-## 1. `if` Statement
-
-The `if` statement is used to execute a block of code if the condition is true.
-
-### Syntax:
-```js
-if (condition) {
-    // Code to execute if condition is true
-}
-```
-
-### Example:
-```js
-let age = 18;
-
-if (age >= 18) {
-    console.log('You are an adult.');
-}
-```
-
-## 2. `else` Statement
-
-The `else` statement is used to execute a block of code if the `if` condition is false.
-
-### Syntax:
-```js
-if (condition) {
-    // Code to execute if condition is true
-} else {
-    // Code to execute if condition is false
-}
-```
-
-### Example:
-```js
-let age = 16;
-
-if (age >= 18) {
-    console.log('You are an adult.');
-} else {
-    console.log('You are not an adult.');
-}
-```
-
-## 3. `else if` Statement
-
-The `else if` statement is used to test multiple conditions. If the first condition is false, it checks the next one.
-
-### Syntax:
+## Syntax:
 ```js
 if (condition1) {
     // Code to execute if condition1 is true
-} else if (condition2) {
-    // Code to execute if condition2 is true
+    if (condition2) {
+        // Code to execute if condition2 is true
+    } else {
+        // Code to execute if condition2 is false
+    }
 } else {
-    // Code to execute if all conditions are false
+    // Code to execute if condition1 is false
 }
 ```
 
-### Example:
-```js
-let score = 85;
+## Example 1: Basic Nested if-else
 
-if (score >= 90) {
-    console.log('Grade A');
-} else if (score >= 80) {
-    console.log('Grade B');
-} else {
-    console.log('Grade C');
-}
-```
-
-## 4. `switch` Statement
-
-The `switch` statement is used to execute one of many blocks of code based on the value of an expression. It is typically used when you need to compare the same expression to multiple possible values.
-
-### Syntax:
-```js
-switch (expression) {
-    case value1:
-        // Code to execute if expression === value1
-        break;
-    case value2:
-        // Code to execute if expression === value2
-        break;
-    default:
-        // Code to execute if none of the cases match
-}
-```
-
-### Example:
-```js
-let day = 2;
-
-switch (day) {
-    case 1:
-        console.log('Monday');
-        break;
-    case 2:
-        console.log('Tuesday');
-        break;
-    case 3:
-        console.log('Wednesday');
-        break;
-    default:
-        console.log('Unknown day');
-}
-```
-
-- The `break` statement is used to stop the execution of code once a match is found.
-- The `default` case is optional and executes if no cases match the expression.
-
-## 5. Ternary Operator
-
-The ternary operator is a shorthand for the `if-else` statement. It takes three operands: a condition, a result if true, and a result if false.
-
-### Syntax:
-```js
-condition ? expressionIfTrue : expressionIfFalse;
-```
-
-### Example:
-```js
-let age = 18;
-let message = (age >= 18) ? 'You are an adult.' : 'You are not an adult.';
-console.log(message);
-```
-
-## 6. Nested Decision-Making
-
-You can nest `if`, `else if`, and `else` statements to create more complex decision-making structures.
-
-### Example:
 ```js
 let num = 10;
 
 if (num > 0) {
+    console.log('The number is positive.');
+    
     if (num % 2 === 0) {
-        console.log('The number is positive and even.');
+        console.log('The number is even.');
     } else {
-        console.log('The number is positive and odd.');
+        console.log('The number is odd.');
     }
 } else {
     console.log('The number is not positive.');
 }
 ```
 
-## 7. Practical Use in Real-World Scenarios
+### Explanation:
+- The first `if` checks if the number is positive.
+- If true, it enters another `if-else` to check if the number is even or odd.
+- If the number is not positive, the outer `else` block runs.
 
-Decision-making structures are often used to handle user input, control application flow, and manage different outcomes based on various conditions.
+### Output for `num = 10`:
+```
+The number is positive.
+The number is even.
+```
 
-### Example: Checking User Login Status
+### Output for `num = 3`:
+```
+The number is positive.
+The number is odd.
+```
+
+### Output for `num = -5`:
+```
+The number is not positive.
+```
+
+## Example 2: Nested if-else with Multiple Conditions
+
 ```js
-let isLoggedIn = true;
-let userRole = 'admin';
+let age = 20;
+let hasID = true;
 
-if (isLoggedIn) {
-    if (userRole === 'admin') {
-        console.log('Welcome, Admin!');
+if (age >= 18) {
+    console.log('You are eligible to vote.');
+    
+    if (hasID) {
+        console.log('You can proceed to vote.');
     } else {
-        console.log('Welcome, User!');
+        console.log('You need an ID to vote.');
     }
 } else {
-    console.log('Please log in to continue.');
+    console.log('You are not old enough to vote.');
 }
 ```
 
-## Summary of Decision-Making Statements
+### Explanation:
+- The outer `if` checks if the person is 18 or older.
+- If true, it then checks if they have an ID.
+- If false, the person is not old enough to vote.
 
-| Statement | Description                                              | Example                        |
-|-----------|----------------------------------------------------------|--------------------------------|
-| `if`      | Executes code if the condition is true                    | `if (x > 10) { ... }`          |
-| `else`    | Executes code if the `if` condition is false              | `else { ... }`                 |
-| `else if` | Tests multiple conditions                                 | `else if (x > 5) { ... }`      |
-| `switch`  | Executes one of many blocks based on a specific value     | `switch(x) { case 1: ... }`    |
-| `? :`     | Shorthand for `if-else`, known as the ternary operator    | `condition ? true : false`     |
+### Output when `age = 20` and `hasID = true`:
+```
+You are eligible to vote.
+You can proceed to vote.
+```
 
-For more information about decision making statements in JavaScript, visit: 
-> - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
-> - [W3Schools](https://www.w3schools.com/js/js_if_else.asp)
-> - [YouTube (Recommended)](https://www.youtube.com/watch?v=7lld3Xk5usQ&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=54)
+### Output when `age = 16`:
+```
+You are not old enough to vote.
+```
+
+## Example 3: Multiple Levels of Nesting
+
+You can have more than two levels of nested `if`-`else` statements, although it can make your code more complex and harder to read.
+
+```js
+let num = 15;
+
+if (num > 0) {
+    console.log('The number is positive.');
+
+    if (num > 10) {
+        console.log('The number is greater than 10.');
+
+        if (num % 5 === 0) {
+            console.log('The number is divisible by 5.');
+        } else {
+            console.log('The number is not divisible by 5.');
+        }
+    } else {
+        console.log('The number is less than or equal to 10.');
+    }
+} else {
+    console.log('The number is not positive.');
+}
+```
+
+### Explanation:
+- The first `if` checks if the number is positive.
+- The second `if` checks if the number is greater than 10.
+- The third `if` checks if the number is divisible by 5.
+
+### Output for `num = 15`:
+```
+The number is positive.
+The number is greater than 10.
