@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,27 @@
     <title>Arrays</title>
     <script src="script.js"></script>
 </head>
+
 <body style="font-family: cursive;">
+    <button onclick="myFunction1()">Sort Alphabetically</button>
+    <button onclick="myFunction2()">Sort Numerically</button>
+
+    <p id="demo"></p>
+
+    <script>
+        const points = [40, 100, 1, 5, 25, 10];
+        document.getElementById("demo").innerHTML = points;
+
+        function myFunction1() {
+            points.sort();
+            document.getElementById("demo").innerHTML = points;
+        }
+
+        function myFunction2() {
+            points.sort(function (a, b) { return a - b });
+            document.getElementById("demo").innerHTML = points;
+        }
+    </script>
     <h1>Basic Array Methods</h1>
     <ol>
         <li>pop()</li>
@@ -22,5 +43,6 @@
         <li>slice()</li>
         <li>splice()</li>
     </ol>
-</body> 
+</body>
+
 </html>

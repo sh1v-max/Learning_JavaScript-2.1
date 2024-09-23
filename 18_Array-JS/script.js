@@ -43,6 +43,23 @@ console.log(arr1.sort());                  // ["bell", "hash", "killjoy", "norma
 console.log(arr2.sort());                  // ["broke", "drama", "poor", "rich", "sick"]
 console.log(arr3.sort());                  // ["bell", "broke", "drama", "hash", "killjoy", "normal", "poor", "rich", "sick", "zod"]
 
+console.log("=============================================================================");
+
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;
+
+function myFunction1() {
+  points.sort();
+  document.getElementById("demo").innerHTML = points;
+}
+
+function myFunction2() {
+  points.sort(function(a, b){return a - b});
+  document.getElementById("demo").innerHTML = points;
+}
+
+console.log("=============================================================================");
+
 console.log(arr1);    //['bell', 'hash', 'killjoy', 'normal', 'zod']
 console.log(arr2);    //['broke', 'drama', 'poor', 'rich', 'sick']
 console.log(arr3);    //['bell', 'broke', 'drama', 'hash', 'killjoy', 'normal', 'poor', 'rich', 'sick', 'zod']
