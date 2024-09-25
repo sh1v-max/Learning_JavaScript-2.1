@@ -63,4 +63,6 @@ for (let value of arr) {
 Loops are fundamental in programming for automating repetitive tasks, making them key in efficient code execution.
 
 ### For more information , visit: 
+> - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
+> - [W3School](https://www.w3schools.com/js/js_loop_while.asp)
 > - [YouTube](https://www.youtube.com/watch?v=IoDfreDgTgM&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=66)
