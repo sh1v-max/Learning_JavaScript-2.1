@@ -33,3 +33,8 @@ A shallow copy creates a new object or array, but it only copies the references 
 ### Deep Copy
 - Copies all properties, including nested objects.
 - Changes in nested objects do not affect the original.
+
+
+### For more information , visit: 
+> - [MDN Shallow copy](https://developer.mozilla.org/en-US/docs/Glossary/Shallow_copy)
+> - [YouTube](https://www.youtube.com/watch?v=l_YFa0SKqtY&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=64&pp=iAQB)

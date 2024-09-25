@@ -33,3 +33,7 @@ for (let i = 0; i < matrix.length; i++) {
 ## Summary
 
 Multidimensional arrays allow storing complex data structures by nesting arrays inside one another. Accessing or iterating over them requires using multiple indices or nested loops.
+
+
+### For more information , visit: 
+> - [YouTube](https://www.youtube.com/watch?v=hhO8aiDgN9A&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=63&pp=iAQB)
