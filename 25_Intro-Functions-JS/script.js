@@ -1,3 +1,4 @@
+/*
 // console.log("Introducing Functions");
 // console.log("hey,  i am Shiv");
 // console.log("i am a web developer");
@@ -31,3 +32,27 @@ function person(name, profession, age) {
 // person('kunal', 'developer', 24)
 // person('advit', 'swimmer', 25)
 // person('ritik', 'gamer', 23)
+*/
+
+function addTwoNumbers(num1, num2){
+  // console.log('hello')
+  // console.log(2+2)
+
+  // add = num1+num2
+  // return add
+  
+  return num1+num2
+}
+const sum = addTwoNumbers(77, 975)
+console.log(sum)
+
+
+// debugger
+function subTwoNumbers(num1, num2){
+  diff = num1-num2
+  return diff
+}
+
+// const sub = subTwoNumbers(77, 975)  
+const sub = subTwoNumbers(subTwoNumbers(1000,10), subTwoNumbers(200,100))  
+console.log(sub);
