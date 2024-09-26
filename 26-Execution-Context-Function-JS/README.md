@@ -42,10 +42,10 @@ function greet() {
 }
 ```
 
-*memory creation and code execution phase image overview*
+*memory creation and code execution (inside global execution context) phase image overview*
 
 <p align="center">
-    <img src="./images/image.png" />
+    <img src="./images/code-execution.png"  height = "500px"/>
 </p>
 
 ## 3. Call Stack
@@ -72,6 +72,13 @@ first();
 // Call Stack: 
 // third() is called → second() is called → first() is called → global context
 ```
+
+*memory creation and code execution (inside global execution context) phase for function image overview*
+
+<p align="center">
+    <img src="./images/code-execution-function.png" height = "500px" />
+</p>
+
 
 ## 4. Hoisting in Detail
 
