@@ -148,6 +148,10 @@ JavaScript is executed in a **JavaScript Engine** (such as V8 in Chrome). The en
 2. **Call Stack**: Where execution contexts are managed.
 
 For more information about Code execution in JavaScript, visit: 
-> - [W3Schools](https://www.geeksforgeeks.org/javascript-code-execution/)
+> - [GeeksForGeek](https://www.geeksforgeeks.org/javascript-code-execution/)
+> - [FreeCodeCamp](https://www.freecodecamp.org/news/how-javascript-works-behind-the-scene-javascript-execution-context/)
 > - [YouTube (Recommended)](https://www.youtube.com/watch?v=FMhPjmO0ziE&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=46&pp=iAQB)
 > - [YouTube (Function)](https://www.youtube.com/watch?v=JfW1fBRCeLU&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=71)
+> - [YouTube (Call Stack)](https://www.youtube.com/watch?v=kfxITcxEsG0&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=72)
+
+
