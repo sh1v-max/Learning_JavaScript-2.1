@@ -1,4 +1,4 @@
-debugger;
+debugger
 const username = 'wazir'
 const userAge = 25
 

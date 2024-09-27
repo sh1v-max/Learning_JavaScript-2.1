@@ -92,6 +92,19 @@ counter();  // Output: 2
 ### Key Points:
 - Closures preserve access to the outer scope, even after the outer function has executed.
 
+## 6. Window Scope
+
+In JavaScript, the **window scope** refers to the global scope within a web browser environment. It represents the global object, which is accessible throughout the entire web page.
+
+```js
+console.log(window.innerWidth);  // Accessing window property
+window.alert("Hello, world!");  // Calling window method
+```
+
+### Key Points:
+- The window object contains properties and methods that can be accessed globally.
+- Variables declared without the `var`, `let`, or `const` keywords are automatically assigned to the window object.
+
 ## Summary
 
 - **Global Scope**: Accessible throughout the program.
@@ -99,7 +112,7 @@ counter();  // Output: 2
 - **Block Scope**: Local to blocks (`let` and `const`).
 - **Lexical Scope**: Inner functions can access outer variables.
 - **Closures**: Functions remember their outer variables.
-
+- **Window Scope**: Global scope within a web browser environment.
 
 For more information about Scope in JavaScript, visit: 
 > - [W3School](https://www.w3schools.com/js/js_scope.asp)
