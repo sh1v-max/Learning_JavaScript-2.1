@@ -68,3 +68,11 @@ let a = 3;
 - **Hoisting** allows JavaScript to move variable and function declarations to the top of the current scope.
 - `var` declarations are hoisted and initialized with `undefined`, while `let` and `const` are hoisted but not initialized, causing a `ReferenceError` if accessed too early.
 - Function declarations are hoisted completely, whereas function expressions are treated like variables.
+
+
+
+For more information about Code execution in JavaScript, visit: 
+> - [W3School](https://www.w3schools.com/js/js_hoisting.asp)
+> - [YouTube](https://www.youtube.com/watch?v=E5af3VAaGCs&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=73&pp=iAQB)
+
+

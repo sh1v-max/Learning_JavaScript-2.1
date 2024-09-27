@@ -99,3 +99,13 @@ counter();  // Output: 2
 - **Block Scope**: Local to blocks (`let` and `const`).
 - **Lexical Scope**: Inner functions can access outer variables.
 - **Closures**: Functions remember their outer variables.
+
+
+For more information about Code execution in JavaScript, visit: 
+> - [GeeksForGeek](https://www.geeksforgeeks.org/javascript-code-execution/)
+> - [FreeCodeCamp](https://www.freecodecamp.org/news/how-javascript-works-behind-the-scene-javascript-execution-context/)
+> - [YouTube (Recommended)](https://www.youtube.com/watch?v=FMhPjmO0ziE&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=46&pp=iAQB)
+> - [YouTube (Function)](https://www.youtube.com/watch?v=JfW1fBRCeLU&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=71)
+> - [YouTube (Call Stack)](https://www.youtube.com/watch?v=kfxITcxEsG0&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=72)
+
+
