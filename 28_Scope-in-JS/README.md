@@ -114,6 +114,10 @@ window.alert("Hello, world!");  // Calling window method
 - **Closures**: Functions remember their outer variables.
 - **Window Scope**: Global scope within a web browser environment.
 
+### reference image
+
+![Scope Image](./images/image.png)
+
 For more information about Scope in JavaScript, visit: 
 > - [W3School](https://www.w3schools.com/js/js_scope.asp)
 > - [YouTube](https://www.youtube.com/watch?v=7QhMQRRBpZ0&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=74)

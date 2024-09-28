@@ -1,12 +1,25 @@
 debugger
 const username = 'wazir'
-const userAge = 25
+let userAge = 25
+var a = 5
 
 function add() {
+    const username = 'khan'
     const x = 5
     const y = 10
     console.log(x + y)
+    console.log(username)
 }
 
+function sub() {
+    const x = 5
+    const y = 10
+    console.log(x - y)
+    console.log(username)
+}
+
+
 add()
-console.log('Program Ended')
+sub()
+
+console.log('Program Ended') 
