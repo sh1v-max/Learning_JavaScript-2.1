@@ -1,48 +1,87 @@
-# Lexical Scope and Block Scope in JavaScript
+# Higher-Order Functions in JavaScript
 
-## Lexical Scope
+A **higher-order function** is a function that either:
+- Takes one or more functions as arguments, or
+- Returns a function as its result.
 
-Lexical scope (also known as static scope) refers to the fact that the scope of a variable is determined by its position in the source code. In JavaScript, functions are lexically scoped, meaning an inner function can access variables defined in outer functions.
+These functions enable a functional programming style and allow for more flexible and concise code.
 
-```js
-function outer() {
-  let outerVar = "I am from outer";
-  
-  function inner() {
-    console.log(outerVar);  // Can access outerVar
-  }
-  inner();  // Output: I am from outer
-}
-outer();
-```
+## Example of a Higher-Order Function
 
-### Key Points:
-- Inner functions have access to variables in their outer scope.
-- Lexical scope is defined at the time of writing, not during execution.
-
-## Block Scope
-
-Block scope refers to variables declared inside a block (`{}`), typically with `let` or `const`, and these variables are only accessible within that block.
+### Passing a Function as an Argument
 
 ```js
-{
-  let blockScopedVar = "I am block scoped";
-  console.log(blockScopedVar);  // Accessible here
+function greet() {
+  return "Hello";
 }
-console.log(blockScopedVar);  // Error: blockScopedVar is not defined
+
+function executeFunction(func) {
+  console.log(func());
+}
+
+executeFunction(greet);  // Output: Hello
 ```
 
-### Key Points:
-- `let` and `const` are block-scoped and cannot be accessed outside the block in which they are defined.
-- Variables declared with `var` are **not** block-scoped but are function-scoped.
+In this example, `executeFunction` is a higher-order function because it takes another function `greet` as its argument.
 
-## Summary
+### Returning a Function from Another Function
 
-- **Lexical Scope**: Functions can access variables from their outer lexical environment.
-- **Block Scope**: Variables declared with `let` or `const` are confined within the block where they are declared.
+```js
+function multiplier(factor) {
+  return function(number) {
+    return number * factor;
+  };
+}
+
+const double = multiplier(2);
+console.log(double(5));  // Output: 10
+```
+
+Here, `multiplier` is a higher-order function because it returns another function that multiplies a number by a given factor.
+
+## Common Higher-Order Functions in JavaScript
+
+JavaScript has several built-in higher-order functions used with arrays:
+
+### `map()`
+The `map()` method creates a new array by applying a function to each element of the original array.
+
+```js
+const numbers = [1, 2, 3];
+const doubled = numbers.map(n => n * 2);
+console.log(doubled);  // Output: [2, 4, 6]
+```
+
+### `filter()`
+The `filter()` method creates a new array with all elements that pass a test implemented by a provided function.
+
+```js
+const numbers = [1, 2, 3, 4, 5];
+const even = numbers.filter(n => n % 2 === 0);
+console.log(even);  // Output: [2, 4]
+```
+
+### `reduce()`
+The `reduce()` method applies a function against an accumulator and each element of the array to reduce it to a single value.
+
+```js
+const numbers = [1, 2, 3, 4];
+const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+console.log(sum);  // Output: 10
+```
+
+## Benefits of Higher-Order Functions
+
+- **Abstraction**: Higher-order functions abstract actions, not just values, making code more reusable.
+- **Modularity**: They promote modular code, where specific logic can be separated into reusable functions.
+- **Code Simplification**: They reduce the need for loops and conditional statements by offering concise methods for handling common tasks like mapping, filtering, or reducing arrays.
+
+## Conclusion
+
+Higher-order functions are an essential part of functional programming in JavaScript, making it easier to manipulate functions and data in a clean, modular, and reusable manner.
 
 
-For more information about Scope in JavaScript, visit: 
+For more information about Higher Order and CallBack function in JavaScript, visit: 
 > - [W3School](https://www.w3schools.com/js/js_scope.asp)
 > - [YouTube](https://www.youtube.com/watch?v=P6G0ucf2nSw&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=76)
 
