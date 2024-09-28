@@ -82,7 +82,7 @@ Higher-order functions are an essential part of functional programming in JavaSc
 
 
 For more information about Higher Order and CallBack function in JavaScript, visit: 
-> - [W3School](https://www.w3schools.com/js/js_scope.asp)
+> - [FreeCodeCamp](https://www.freecodecamp.org/news/higher-order-functions-explained/)
 > - [YouTube](https://www.youtube.com/watch?v=P6G0ucf2nSw&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=76)
 
 
