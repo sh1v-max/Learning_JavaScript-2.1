@@ -8,6 +8,5 @@ function add() {
     console.log(x + y)
 }
 
-
 add()
 console.log('Program Ended')
