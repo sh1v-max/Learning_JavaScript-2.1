@@ -145,7 +145,7 @@ setTimeout(repeat, 1000);
 
 
 For more information about SetTimeout and SetInterval in JavaScript, visit: 
-> - [MDN (recommended)](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
-> - [W3School](https://www.w3schools.com/js/js_timing.asp)
-> - [YouTube](https://www.youtube.com/watch?v=fn9FjfV7rxA&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=78)
+> - [MDN (recommended)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop)
+> - [GeeksForGeek](https://www.geeksforgeeks.org/what-is-an-event-loop-in-javascript/)
+> - [YouTube (recommended)](https://www.youtube.com/watch?v=JMeT-Uskm7M&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=79)
 
