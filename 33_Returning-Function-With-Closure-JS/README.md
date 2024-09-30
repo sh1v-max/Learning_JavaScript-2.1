@@ -100,3 +100,10 @@ In this case, the closure allows the `message` variable to persist even after `d
 - **Private Variables**: Variables in the outer function are only accessible through the inner function, creating data privacy.
 - Closures are often used in **asynchronous** programming, especially in callback functions.
 
+For more information about SetTimeout and SetInterval in JavaScript, visit: 
+> - [MDN (recommended)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+> - [GeeksForGeek](https://www.geeksforgeeks.org/closure-in-javascript/)
+> - [W3School](https://www.w3schools.com/js/js_function_closures.asp)
+> - [YouTube (HOF with closure)](https://www.youtube.com/watch?v=w_-fVsa6qns&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=82)
+> - [YouTube (recommended)](https://www.youtube.com/watch?v=d4_hcQkGkfI)
+
