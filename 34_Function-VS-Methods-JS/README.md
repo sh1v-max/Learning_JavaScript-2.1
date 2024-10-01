@@ -29,35 +29,65 @@
 
 ## Methods in JavaScript
 
-- **Definition**: Methods are functions that are associated with an object. They operate on the data contained within that object.
+- In JavaScript, a **method** is a function that is associated with an object or class. Methods are actions that an object can perform and are used to manipulate or interact with the object’s properties. Essentially, methods are functions that are stored as object properties and provide behavior to the object.
 
-- **Syntax**:
-  ```javascript
-  class ClassName {
-      methodName(parameters) {
-          // code block
-          return value; // Optional
-      }
-  }
-  ```
+### Basic Understanding of Methods
 
-- **Example**: 
-  Let’s create a class `Rectangle` that has a method to calculate the area:
-  ```javascript
-  class Rectangle {
-      constructor(length, width) {
-          this.length = length; // Object property
-          this.width = width;   // Object property
-      }
+- In JavaScript, objects are collections of key-value pairs where keys are properties, and values can be either data (like numbers, strings) or functions. When a function is defined as a value of an object property, it is called a **method**.
 
-      calculateArea() {
-          return this.length * this.width; // Uses object properties
-      }
-  }
+#### Example of an Object with a Method:
+```javascript
+let person = {
+    name: 'John',
+    age: 30,
+    greet: function() {  // 'greet' is a method
+        console.log('Hello, my name is ' + this.name);
+    }
+};
 
-  const myRectangle = new Rectangle(5, 10);
-  console.log(myRectangle.calculateArea()); // Output: 50
-  ```
+person.greet(); // Output: Hello, my name is John
+```
+- Here, `greet` is a method because it is a function that belongs to the `person` object.
+- The `this` keyword refers to the object (in this case, `person`) that owns the method. It allows access to the object’s properties within the method.
+
+### Defining Methods in Objects
+
+There are two main ways to define methods in JavaScript objects:
+1. **Standard function syntax** (as shown in the previous example).
+2. **Shorthand method definition** (introduced in ES6):
+   ```javascript
+   let car = {
+       brand: 'Toyota',
+       start() {  // Shorthand syntax for defining a method
+           console.log('Car started');
+       }
+   };
+
+   car.start(); // Output: Car started
+   ```
+
+### Understanding `this` in Methods
+
+The `this` keyword is crucial in methods, as it refers to the object that the method belongs to. Inside a method, `this` allows access to other properties and methods of the same object.
+
+#### Example:
+```javascript
+let user = {
+    name: 'Alice',
+    age: 25,
+    displayInfo() {
+        console.log(this.name + ' is ' + this.age + ' years old');
+    }
+};
+
+user.displayInfo(); // Output: Alice is 25 years old
+```
+- Here, `this.name` refers to the `name` property of the `user` object, and `this.age` refers to the `age` property.
+
+### Advanced Topics
+
+#### 1. **Methods in Classes**
+Classes, introduced in ES6, are templates for
 
 ### Characteristics of Methods:
 - **Object Association**: Methods belong to an object or class. They have access to the object’s properties using `this`.
