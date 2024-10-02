@@ -67,6 +67,7 @@ const users = [
   { name: 'Sam', age: 40 },
 ];
 
+
 // Filter users who are older than 18
 const adults = users.filter(user => user.age > 18);
 
