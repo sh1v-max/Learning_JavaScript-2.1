@@ -1,4 +1,4 @@
-# `map()` in JavaScript
+# `map()` method in JavaScript
 
 ## **What is `map()` in JavaScript?**
 - The `map()` method creates a **new array** by applying a function to every element in an existing array.
