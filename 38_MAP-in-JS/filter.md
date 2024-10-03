@@ -150,5 +150,3 @@ console.log(filteredProducts);
 1. MDN Web Docs: [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 2. JavaScript.info: [Array filter](https://javascript.info/array-methods#filter)
 3. W3Schools: [JavaScript Array filter()](https://www.w3schools.com/jsref/jsref_filter.asp)
-
-These resources will give you more details and in-depth explanations with more examples of how `filter()` works in JavaScript.

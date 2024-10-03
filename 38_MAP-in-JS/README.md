@@ -178,3 +178,6 @@ These three methods are powerful tools in JavaScript for working with arrays, an
 - MDN Web Docs:  [map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter), [reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 - [JavaScript.info](https://javascript.info/array-methods#map-reduce-filter)
 - [FreeCodeCamp](https://www.freecodecamp.org/news/javascript-higher-order-functions-explained-using-map-filter-and-reduce/)
+- [YouTube](https://www.youtube.com/watch?v=Kc3kSIpL6x8&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=84&pp=iAQB)
+- [YouTube (best explanation for reduce())](https://youtu.be/zdp0zrpKzIE?t=1111)
+
