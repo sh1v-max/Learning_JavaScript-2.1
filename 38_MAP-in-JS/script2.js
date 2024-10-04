@@ -38,7 +38,7 @@ const user30 = usersCamp.reduce((acc ,curr) => {
     acc = acc.concat(curr.firstName) //concatenate the first name
   }
   return acc
-}, [])
+}, {})
 
 console.log(user30)
 // const user30 = usersCamp.filter((user) => {

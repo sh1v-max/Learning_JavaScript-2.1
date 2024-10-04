@@ -22,6 +22,20 @@ fruits.forEach((fruit) => {
   console.log(fruit) // arrow function(anonymous) is a callback function
 })
 
+//can also use multiple arguments in the callback function
+const months = ['January', 'February', 'March', 'April', 'May']
+months.forEach((month, index) => {
+  console.log(index, month);
+  return month;
+});
+/*output:
+    0 'January'
+    1 'February'
+    2 'March'
+    3 'April'
+    4 'May'
+*/
+
 /*
 fruits.forEach(abc)
 function abc(el){
