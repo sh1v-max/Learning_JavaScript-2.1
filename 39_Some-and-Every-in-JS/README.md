@@ -64,3 +64,4 @@ console.log(allAdults);  // Output: true
 **References:**
 - [MDN Web Docs - some()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 - [MDN Web Docs - every()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
+- [YouTube](https://www.youtube.com/watch?v=UkbmmtvxpXA&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=85&pp=iAQB)
