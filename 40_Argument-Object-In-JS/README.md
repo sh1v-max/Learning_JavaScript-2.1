@@ -119,6 +119,7 @@ demo(1, 2, 3);  // Outputs: [1, 2, 3]
 - **Flexible Functions**: When the number of arguments a function will accept isn't known in advance, `arguments` (or rest parameters) allow handling of any number of arguments.
 - **Backward Compatibility**: Older JavaScript code that doesn't use modern syntax (like rest parameters) often relies on `arguments` to access and manipulate passed arguments.
 
+
 In conclusion, the `arguments` object provides backward compatibility for handling function arguments in JavaScript, but it has been largely replaced by rest parameters in modern JavaScript development.
 
 ## Resources for Further Reading:
