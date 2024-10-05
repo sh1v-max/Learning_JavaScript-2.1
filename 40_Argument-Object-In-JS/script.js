@@ -60,7 +60,7 @@ const sum2= function(){
 }
 console.log(sum(1,2,3,4,5)); //15
 
-//but wont work with arrow function
+//&but wont work with arrow function
 const sum3=( )=> {
   let sum = 0
   for(let i = 0; i < arguments.length; i++){

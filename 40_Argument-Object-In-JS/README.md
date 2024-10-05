@@ -124,4 +124,4 @@ In conclusion, the `arguments` object provides backward compatibility for handli
 ## Resources for Further Reading:
 - [MDN Web Docs: Arguments Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
 - [JavaScript.info: Arguments Object](https://javascript.info/rest-parameters-spread#the-arguments-object)
-- [YouTube](https://javascript.info/rest-parameters-spread#the-arguments-object)
+- [YouTube](https://www.youtube.com/watch?v=E59DytaXTio&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=86)
