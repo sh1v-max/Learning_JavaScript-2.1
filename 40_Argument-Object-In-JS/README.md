@@ -70,18 +70,16 @@ In JavaScript, the `arguments` object is an array-like object accessible within 
 ## Converting `arguments` to an Array:
 
 Since `arguments` is not a true array, you might want to convert it to an actual array to use array methods. Here's how:
+1. **Using `Array.from()`**:
+   ES6 introduced the `Array.from()` method, which directly converts array-like objects (like `arguments`) to arrays.
 
-1. **Using `Array.prototype.slice()`:**
-   
    ```javascript
-   function demo() {
-     const args = Array.prototype.slice.call(arguments);
-     console.log(args); // Now an array
+   function example() {
+     const argsArray = Array.from(arguments);
+     console.log(argsArray); // Now it's a real array
    }
-
-   demo(1, 2, 3);  // Outputs: [1, 2, 3]
+   example(4, 5, 6); // Output: [4, 5, 6]
    ```
-
 2. **Using the spread operator (`...`):**
    
    ```javascript
@@ -92,6 +90,18 @@ Since `arguments` is not a true array, you might want to convert it to an actual
 
    demo(1, 2, 3);  // Outputs: [1, 2, 3]
    ```
+
+3. **Using `Array.prototype.slice()`:**
+   
+   ```javascript
+   function demo() {
+     const args = Array.prototype.slice.call(arguments);
+     console.log(args); // Now an array
+   }
+
+   demo(1, 2, 3);  // Outputs: [1, 2, 3]
+   ```
+
 
 ## Differences Between `arguments` Object and Rest Parameters:
 - The `arguments` object is older and exists in all traditional functions, but it's not an actual array and lacks array methods.
