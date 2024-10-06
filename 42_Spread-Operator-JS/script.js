@@ -56,11 +56,10 @@ console.log(add(1, 2, 3, 4, 5)); //15
 console.log(add(...num4)) //55
 //passing array as argument using spread operator
 console.log(add(...num5)) //55Wazir
-console.log(add(...myName))//)0Wazir
+console.log(add(...myName))//)0Wazir (0 comes from 'sum = 0')
 //its printing 0 because it is not an array, it is a string
 //it happens because spread operator works only on iterables like arrays, strings, objects, etc.
-//we can pass arrays using spread operator inside a function but 
-//objects can't be passed as arguments using spread operator inside a function
+//& we can pass arrays using spread operator while calling function but not object
 //* spread operator only works in iterables like arrays, strings, objects, etc. 
 //* It does not work on numbers, null, undefined, etc.
 //* The spread operator creates shallow copies for both arrays and objects. 
