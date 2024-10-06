@@ -43,3 +43,6 @@ console.log(updatedUser3) // {name: "Wazir2", age: 222, name2: "Wazir2", age2: 2
 console.log(updatedUser4) // {name: "Wazir3", age: 222, name3: "Wazir3", age3: 222, address: {…}}
 
 //with function
+function add(){
+    console.log(arguments);
+}
