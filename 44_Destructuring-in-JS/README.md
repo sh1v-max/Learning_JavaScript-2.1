@@ -279,3 +279,6 @@ console.log(rest);  // { age: 29, country: 'USA' }
 ## Conclusion
 
 Destructuring is a powerful feature in JavaScript that simplifies extracting values from arrays and objects. It can be used in a variety of situations, from simple array or object assignments to working with complex data structures in function parameters and return values. This feature not only makes your code cleaner but also more readable and efficient.
+
+### For more information, visit
+> [YouTube](https://www.youtube.com/watch?v=9dQ38beIC-M&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=90&pp=iAQB)
