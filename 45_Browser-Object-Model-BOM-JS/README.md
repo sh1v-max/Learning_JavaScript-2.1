@@ -228,3 +228,18 @@ Here are some helpful references for further reading on the **Browser Object Mod
 > [W3Schools - BOM](https://www.w3schools.com/js/js_window.asp)
 >
 > [GeeksforGeeks - BOM](https://www.geeksforgeeks.org/browser-object-model-bom-in-javascript/)
+
+---
+### Difference Between BOM and DOM
+
+| Feature                      | **DOM (Document Object Model)**         | **BOM (Browser Object Model)**           |
+|------------------------------|-----------------------------------------|------------------------------------------|
+| **Definition**                | Structured representation of the HTML document. | Interface for interacting with the browser itself. |
+| **Purpose**                   | Deals with document content and structure (HTML elements). | Deals with browser functions and controls (window, location, history). |
+| **Manipulates**               | HTML and XML documents (elements, attributes, text). | Browser windows, history, location, and other browser-specific properties. |
+| **Key Objects/Methods**       | `document`, `getElementById()`, `querySelector()` | `window`, `navigator`, `location`, `history` |
+| **Environment**               | Works in both browser and non-browser environments (e.g., Node.js). | Browser-specific; not available in non-browser environments. |
+| **Example Use Case**          | Accessing and modifying web page elements. | Controlling the browser window, changing the URL, checking browser information. |
+| **Events**                    | Focuses on DOM events like clicks, key presses, etc. | Handles browser events like window resizing, page reloads, etc. |
+
+---
