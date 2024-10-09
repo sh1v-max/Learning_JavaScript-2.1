@@ -5,7 +5,6 @@
 - It is an interface for web pages, allowing scripts (JavaScript) to dynamically manipulate the document structure, style, and content.
 - The DOM is **platform and language-independent**, which means it can be used with various programming languages (though commonly used with JavaScript).
 
----
 
 ### **DOM Structure**
 - **Tree Structure**: The document is represented as a hierarchy of **nodes** (e.g., elements, text, attributes).
@@ -39,8 +38,6 @@ Document
           └── p
 ```
 
----
-
 ### **Interacting with the DOM**
 JavaScript can access and manipulate DOM elements using the **`document`** object.
 
@@ -65,8 +62,6 @@ JavaScript can access and manipulate DOM elements using the **`document`** objec
    ```javascript
    const allDivs = document.querySelectorAll('div');
    ```
-
----
 
 ### **Modifying the DOM**
 Once an element is selected, you can modify its content, attributes, and style.
@@ -102,7 +97,6 @@ Once an element is selected, you can modify its content, attributes, and style.
   div.style.fontSize = "20px";
   ```
 
----
 
 ### **Creating and Removing Elements**
 JavaScript allows you to create new elements and remove existing ones in the DOM.
@@ -122,7 +116,6 @@ JavaScript allows you to create new elements and remove existing ones in the DOM
   elementToRemove.remove();
   ```
 
----
 
 ### **DOM Events**
 Events allow JavaScript to react to user interactions with the web page (clicks, key presses, form submissions, etc.).
@@ -140,7 +133,6 @@ button.addEventListener('click', function() {
 });
 ```
 
----
 
 ### **DOM Traversal**
 JavaScript allows you to navigate through the DOM tree to find related elements.
@@ -163,22 +155,20 @@ JavaScript allows you to navigate through the DOM tree to find related elements.
    const next = element.nextSibling;
    ```
 
----
 
 ### **DOM vs BOM (Browser Object Model)**
 - **DOM**: Focuses on the document and its structure, allowing you to interact with elements, attributes, and content.
 - **BOM**: Focuses on the browser window and its components like the `window` object, `navigator`, `screen`, `location`, and `history`.
 
----
 
 ### **Summary**
 - The **DOM** represents the structure of an HTML or XML document as a **tree of nodes**.
 - JavaScript interacts with the DOM via the `document` object, allowing you to **select, modify, create, and remove** elements.
 - The DOM is essential for creating **dynamic web pages** that respond to user actions and can be updated in real-time.
 
----
 
 ### **References:**
-1. Mozilla Developer Network (MDN) Web Docs. ["DOM Introduction"](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
-2. W3Schools. ["JavaScript HTML DOM"](https://www.w3schools.com/js/js_htmldom.asp)
-3. JavaScript.info. ["The DOM – Document Object Model"](https://javascript.info/dom-nodes)
+> - Mozilla Developer Network (MDN) Web Docs. ["DOM Introduction"](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+> - W3Schools. ["JavaScript HTML DOM"](https://www.w3schools.com/js/js_htmldom.asp)
+> - JavaScript.info. ["The DOM – Document Object Model"](https://javascript.info/dom-nodes)
+> - YouTube. [YouTube](https://www.youtube.com/watch?v=m2TpNXtT4Cs&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=95)
