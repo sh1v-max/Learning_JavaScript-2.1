@@ -37,4 +37,4 @@ const idImg = document.getElementById('id-img')
 const queryImg = document.querySelector('.query-img')
 const queryImg2 = document.querySelectorAll('#query-img')
 //selects the first element with the class of query-img
-//it will return element in the form of NodeList
+//it will return element in the form of NodeList 
