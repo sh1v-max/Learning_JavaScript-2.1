@@ -38,3 +38,24 @@ const queryImg = document.querySelector('.query-img')
 const queryImg2 = document.querySelectorAll('#query-img')
 //selects the first element with the class of query-img
 //it will return element in the form of NodeList 
+const jsImage = document.querySelector('[alt="javascript roadmap"]')
+//selects the first element with the attribute of alt with the value of javascript roadmap
+//we can also select the element with the attribute of src, href, etc.
+const li = document.querySelector('ul')
+// const ulLi = document.querySelector('ul li')
+const ulLiAll = document.querySelectorAll('ul li')
+// jsImage.src = 'https://images5.alphacoders.com/137/1372790.png'
+const imagesUrl = [
+  'https://images5.alphacoders.com/137/1372790.png',
+  'https://pharmawiki.in/wp-content/uploads/2012/04/images5.jpg',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeYWDxjt9GrMZ2-5FD4fFtSFM0n0bbSMCXwg&s'
+]
+function changeImg1(){
+  document.querySelector('#id-img').src = imagesUrl[0]
+}
+function changeImg2(){
+  document.querySelector('#id-img').src = imagesUrl[1]
+}
+function changeImg3(){
+  document.querySelector('#id-img').src = imagesUrl[2]
+}
