@@ -93,9 +93,3 @@ const allImage0 = [...document.getElementsByClassName('css-img')]
 const container = document.getElementById('container');
 const childElement = container.querySelector('.child-class'); // Searches within the #container element for .child-class
 //here we are searching for the child element with the class of child-class inside the container element
-class Image {
-  constructor(src, alt) {
-    this.src = src;
-    this.alt = alt;
-  }
-}
