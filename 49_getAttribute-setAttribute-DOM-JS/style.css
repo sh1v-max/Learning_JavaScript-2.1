@@ -6,6 +6,13 @@
   border: 4px solid hotpink;
 }
 
-p b {
+/* p b {
   display: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+} */
+
+[hello = "heading1"]{ /* attribute selector */
+  background-color: red;
 }
