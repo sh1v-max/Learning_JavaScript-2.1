@@ -13,6 +13,10 @@
   pointer-events: none;
 } */
 
-[hello = "heading1"]{ /* attribute selector */
+[procoder ="boom"]{ /* attribute selector */
   background-color: red;
+}
+
+#heading{
+  color: rgb(0, 0, 255);
 }
