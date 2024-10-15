@@ -20,6 +20,36 @@ h1.style.backgroundColor = 'pink'
 //   allLinks[i].style.color = 'teal'
 // }
 
-for(elem of allLinks){
-  elem.style.color = 'teal'
+for (const link of allLinks) {
+  //& method 1: using style property
+  // link.style.color = 'teal'
+  // link.style.textDecorationLine = 'none'
+  // link.style.fontWeight = 'bold'
+  // link.style.fontFamily = 'cursive'
+
+  //& method 2: using cssText property
+  // link.style.cssText = `  
+  // color: teal;
+  // font-size: 18px;
+  // font-family: cursive;
+  // font-weight: 700;
+  // text-decoration-line: none;`
+
+  //& method 3: using className property (recommended for one class)
+  // link.className = 'green-link' //inherit the css properties from the css file
+  // link.className = 'wavy-link' //will overwrite the previous class properties
+  // will overwrite any class properties that are already there with element
+  //to prevent this we can use : link.className = 'already-present-class green-link' 
+
+  //& method 4: using setAttribute property
+  // link.setAttribute('class', 'green-link')
+
+  //& method 5: using classList property (recommended for multiple classes)
+  link.classList.add('green-link')
+  link.classList.remove('my-link')
+  link.classList.toggle('wavy-link')
 }
+//giving style like this wont allow you to write like we do in css file
+//for example text-decoration: none; font-weight: bold;
+
+//! applying any of these does not change the css file or the main HTML file, it only changes the style of the elements in the DOM

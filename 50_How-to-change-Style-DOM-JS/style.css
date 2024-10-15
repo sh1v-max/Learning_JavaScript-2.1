@@ -3,7 +3,11 @@
 }
 
 .css-image {
-  color: red
+  color: red;
+  /* font-size: 18px;
+  font-family: cursive;
+  font-weight: 700;
+  text-decoration-line: none; */
 }
 
 [alt="javascript roadmap"] {
@@ -24,4 +28,27 @@
 
 #heading {
   color: rgb(0, 0, 255);
+}
+
+/*we are creating a class to use for DOM*/
+.green-link{
+  color: teal;
+  font-size: 18px;
+  font-family: cursive;
+  font-weight: 700;
+  text-decoration-line: none;
+}
+
+.wavy-link{
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+.my-link{
+  border: solid 1px green;
+}
+
+/* apply this hidden css on any of element in DOM to hide it*/
+.hidden{
+  display: none;
 }
