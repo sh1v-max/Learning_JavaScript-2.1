@@ -1,29 +1,25 @@
-document.querySelector('[hello]') //selecting the element with attribute hello
-document.querySelector('[hello]').attributes.hello
-// Output: Attr {name: "hello", value: "world"}
-document.querySelector('[hello]').getAttribute('hello') //getting the value of hello attribute
-// Output: "world"
-document.querySelector('[hello]').getAttribute('class')// will return all the elements with class attribute
-//and if no class attribute is present it will return null
-document.querySelector('[hello]').setAttribute('hello', 'greet') //setting the value of hello attribute as greet
-document.querySelector('[hello]').getAttribute('hello') //getting the value of hello attribute after setting it to greet
-// Output: "greet"
-//& adding another attribute to the element
-document.querySelector('[hello]').setAttribute('say', 'bye')//setting another attribute say with value bye to the element
-document.querySelector('h1').setAttribute('id','heading')
-// setting an id with value heading to the h1 element
-// Output: <h1 id="heading">Hello World</h1>
+const h1 = document.querySelector('h1')
+const paragraph = document.querySelector('p')
+const allLinks = document.querySelectorAll('a')
 
-//* checking all the attributes of the element
-document.querySelector('[hello]').attributes
-//output: NamedNodeMap {0: class, 1: hello, 2: say, class: class, hello: hello, say: say, length: 3}
+// document.querySelector('h1').style
+h1.style.color
+// CSSStyleDeclaration {alignContent: "", alignItems: "", alignSelf: "", alignmentBaseline: "", all: "", …}
+//using style wont show the css properties written in the css file
 
-//* some common attributes can be accessed directly
-//some common attributes are id, class, name, value, src, href etc
-document.querySelector('[hello]').id
-// Output: "heading"
-document.querySelector('[hello]').id = 'newHeading'
-//output: "newHeading"
-//directly accessing the id attribute and changing its value to newHeading
+// document.querySelector('h1').style.color = 'hotpink'
+h1.style.color = 'hotpink'
+// change the color of the h1 to hotpink
 
-//! using them don't actually change the values in the HTML file, it just changes the values in the DOM
+// document.querySelector('h1').style.backgroundColor = 'pink'
+h1.style.backgroundColor = 'pink'
+// change the background color of the h1 to pink
+
+//changing color of all anchor tags
+// for(let i = 0; i< allLinks.length; i++){
+//   allLinks[i].style.color = 'teal'
+// }
+
+for(elem of allLinks){
+  elem.style.color = 'teal'
+}

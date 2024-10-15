@@ -1,5 +1,9 @@
-.css-image {
+#css-image {
   border: 4px solid green;
+}
+
+.css-image {
+  color: red
 }
 
 [alt="javascript roadmap"] {
@@ -13,10 +17,11 @@
   pointer-events: none;
 } */
 
-[procoder ="boom"]{ /* attribute selector */
+[procoder="boom"] {
+  /* attribute selector */
   background-color: red;
 }
 
-#heading{
+#heading {
   color: rgb(0, 0, 255);
 }
