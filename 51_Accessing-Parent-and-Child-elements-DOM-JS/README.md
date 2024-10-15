@@ -95,8 +95,6 @@ console.log(nextSibling, previousSibling, nextElementSibling, previousElementSib
 
 ## reference
 to know more about innerText, innerHTML, textContent... visit:
-> - [W3School (HTML DOM Element style Property)](https://www.w3schools.com/jsref/prop_html_style.asp)
-> - [W3School (JavaScript HTML DOM - Changing CSS)](https://www.w3schools.com/js/js_htmldom_css.asp)
-> - [W3School (HTML DOM Style object)](https://www.w3schools.com/jsref/dom_obj_style.asp)
-> - [YouTube (Recommended)](https://www.youtube.com/watch?v=KW9DiBSVC_c&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=97)
+> - [W3School (HTML DOM Navigation)](https://www.w3schools.com/js/js_htmldom_navigation.asp)
+> - [YouTube (Recommended)](https://www.youtube.com/watch?v=QK_-jfUIFZE&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=98)
 
