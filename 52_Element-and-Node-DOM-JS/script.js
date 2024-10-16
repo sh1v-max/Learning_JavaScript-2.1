@@ -1,3 +1,8 @@
+//! always use "defer" in script tag in html file to run the script after the html is loaded
+//! or use "DOMContentLoaded" event listener to run the script after the html is loaded
+//! or put the script tag at the end of the body tag
+
+
 //*document.body.children
 //output: HTMLCollection(2) [h1, script] 
 //will return this on console and not on working with vscode 
