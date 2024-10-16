@@ -216,7 +216,7 @@ These techniques provide flexibility in how you style elements in your applicati
 
 
 ## reference
-to know more about innerText, innerHTML, textContent... visit:
+to know more about Changing CSS properties in DOM-JS... visit:
 > - [W3School (HTML DOM Element style Property)](https://www.w3schools.com/jsref/prop_html_style.asp)
 > - [W3School (JavaScript HTML DOM - Changing CSS)](https://www.w3schools.com/js/js_htmldom_css.asp)
 > - [W3School (HTML DOM Style object)](https://www.w3schools.com/jsref/dom_obj_style.asp)

@@ -192,7 +192,7 @@ These methods are vital for any JavaScript developer working with dynamic, inter
 
 
 ## reference
-to know more about innerText, innerHTML, textContent... visit:
+to know more about getAttribute and setAttribute in DOM-JS... visit:
 > - [W3School](https://www.w3schools.com/jsref/met_element_setattribute.asp)
 > - [YouTube](https://www.youtube.com/watch?v=38mNZls3lUU&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=96)
 
