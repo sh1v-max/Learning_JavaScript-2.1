@@ -58,3 +58,9 @@ parent.append("Some text", document.createElement("div"));
 const newElement = document.createElement("p");
 parent.appendChild(newElement);
 ```
+
+## reference
+to know more about append and appendChild in DOM JS... visit:
+> - [W3School](https://www.w3schools.com/js/js_htmldom_navigation.asp)
+> - [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Node)
+> - [YouTube (Recommended)](https://www.youtube.com/watch?v=zx4AIcl77M0&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=98&pp=iAQB)

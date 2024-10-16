@@ -14,7 +14,7 @@ const card = document.querySelector('.card')
 //* how to copy and paste the element? i mean u want the original one at its place
 //* and cloned will be pasted at the new place
 //& h1.cloneNode()
-// <h1></h1>
+// <h1></h1>x
 // Creates a shallow copy of the element, Only the target element is cloned, child elements or content inside the element are not copied.
 //& h1.cloneNode(true) 
 // create a copy of the element with all its children
@@ -24,8 +24,6 @@ const card = document.querySelector('.card')
 // this will create a copy of the h1 and paste it at the end of the container
 //& container.appendChild(card.cloneNode(true))
 // add a copy of the card at the end of the container
-
-
 
 
 
