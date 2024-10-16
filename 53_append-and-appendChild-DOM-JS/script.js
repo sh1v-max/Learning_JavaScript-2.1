@@ -7,6 +7,8 @@ const container = document.querySelector(".container")
 // <div class="container">…</div>flex
 const card = document.querySelector('.card')
 // <div class="card">1</div>flex
+
+//^ append() method
 //& container.appendChild(h1)
 // <div class="container">…<h1>…</h1></div>flex
 // it will cut the h1 from the original position and paste it at the end of the container
@@ -25,6 +27,10 @@ const card = document.querySelector('.card')
 //& container.appendChild(card.cloneNode(true))
 // add a copy of the card at the end of the container
 
-
+// for(let i = 2; i <=100; i++){
+//     const newCard = card.cloneNode()
+//     newCard.innerText = i
+//     container.appendChild(newCard)
+// }
 
 
