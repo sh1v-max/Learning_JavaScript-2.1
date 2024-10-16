@@ -8,7 +8,7 @@ const container = document.querySelector(".container")
 const card = document.querySelector('.card')
 // <div class="card">1</div>flex
 
-//^ append() method
+//^ appendChild() method
 //& container.appendChild(h1)
 // <div class="container">…<h1>…</h1></div>flex
 // it will cut the h1 from the original position and paste it at the end of the container
@@ -33,4 +33,35 @@ const card = document.querySelector('.card')
 //     container.appendChild(newCard)
 // }
 
+// appending text using appendChild
+const newTextNode = document.createTextNode('Hello World')
+// "Hello World"
+container.appendChild(newTextNode)
+// <div class="container">…Hello World</div>flex
+// we cant directly append text using appendChild method
 
+//& container.appendChild(document.body)
+//Failed to execute 'appendChild' on 'Node': The new child element contains the parent.
+//~ we can't append the parent element to its child element
+//~ we can append sibling elements, any element outside the parent element
+//~ appendChild returns the appended element, so we can chain the appendChild method
+
+//^ append() method
+// using append() method we can append multiple elements at once
+// for(let i = 2; i <=100; i++){
+//     const newCard = card.cloneNode()
+//     newCard.innerText = i
+//     container.append(newCard)
+// }
+
+container.append('Hello')
+// <div class="container">…Hello</div>flex
+// can append text
+
+container.append('hello', h1, 'world')
+// <div class="container">…Hello<h1>Append and AppendChild</h1>world</div>flex
+// can append multiple elements at once
+
+//~ append() method is more flexible than appendChild() method
+//~ we can append multiple elements at once
+//~ it returns undefined
