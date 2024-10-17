@@ -8,3 +8,11 @@
 img {
   width: 60px;
 }
+
+.img-container{
+  text-align: center;
+}
+
+.img-container p{
+  margin: 0;
+}
