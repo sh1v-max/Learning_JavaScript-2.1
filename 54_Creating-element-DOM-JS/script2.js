@@ -11,7 +11,7 @@ for (i = 1; i <= 100; i++) {
   // create a new div and updating class for the div
   const newImg = document.createElement('img')
   newImg.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png`
-  // create a new image and add updating src to the image
+  // create a new image and update src of the image
   const newPara = document.createElement('p')
   newPara.innerText = i
   // create a new paragraph and add text to the paragraph
