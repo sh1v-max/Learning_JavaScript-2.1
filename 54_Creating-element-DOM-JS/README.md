@@ -201,6 +201,6 @@ Feel free to ask if you need more detailed explanations on specific topics or ex
 
 ## reference
 to know more about Creating element in DOM JS... visit:
-> - [MDN - appendChil()](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
-> - [MDN - append()](https://developer.mozilla.org/en-US/docs/Web/API/Element/append)
-> - [YouTube (Recommended)](https://www.youtube.com/watch?v=rSX0sYwPnZg&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=102)
+> - [W3School](https://www.w3schools.com/jsref/met_document_createelement.asp)
+> - [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+> - [YouTube (Recommended)](https://www.youtube.com/watch?v=wl68fLJy_DU&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=101)
