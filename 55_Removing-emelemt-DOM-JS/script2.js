@@ -1,5 +1,5 @@
 const h1 = document.querySelector('h1')
-const container = document.querySelector('.container')
+let container = document.querySelector('.container')
 const imgContainer = document.querySelector('.img-container')
 
 //^ creating 100 images of pokemon and adding number to it
@@ -54,3 +54,29 @@ container.innerHTML = myHTML
 
 
 //^ ================= Removing Elements =================
+
+const myImg5 = document.querySelector("body > div > div:nth-child(5)")
+const myImg6 = document.querySelector("body > div > div:nth-child(6)")
+
+myImg6.parentElement.removeChild(myImg6) // remove the 6th image
+// this is the old method to remove the element
+// here we are selecting the parent of the element and then removing the child element from it
+
+myImg5.remove() // remove the 5th image
+// this is the new method to remove the element
+
+//~ document.querySelector("body > h1").remove() 
+// remove the h1 element
+// no need to store in a variable, we can directly remove the element
+
+container.remove() 
+// remove the container element
+// Removed from DOM, but 'container' is still in memory
+container //div.container
+//~ document.body.append(container)
+// container will be back in dom even after using remove()
+
+//! to complete remove it, either don't store it in a variable or use use let keyword and reassign it to null
+container = null
+container // null
+// const would not allow to reassign it to null, so use let keyword
