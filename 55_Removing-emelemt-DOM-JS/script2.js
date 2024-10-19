@@ -73,7 +73,7 @@ container.remove()
 // remove the container element
 // Removed from DOM, but 'container' is still in memory
 container //div.container
-//~ document.body.append(container)
+document.body.append(container)
 // container will be back in dom even after using remove()
 
 //! to complete remove it, either don't store it in a variable or use use let keyword and reassign it to null
