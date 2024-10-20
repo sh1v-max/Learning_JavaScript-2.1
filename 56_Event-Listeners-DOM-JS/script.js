@@ -38,9 +38,26 @@ function secondClick() {
 
 //^ method 3 
 // addEventListener
+const card = document.querySelector('.card')
+const container = document.querySelector('.container')
+
 h1.addEventListener('click', clickH1)
 h1.addEventListener('click', function () {
   console.log('second hii')
 })
 // this will run both functions
 
+// card.addEventListener('click', () =>{
+//   console.log('clicked card')
+// })
+let i = 1
+card.addEventListener('click', () =>{
+  const newCard = document.createElement('div')
+  newCard.classList.add('card')
+  // const newCard = card.cloneNode()
+  // newCard.classList.remove('add-card')
+  // newCard.textContent = i
+  // i++
+  newCard.innerText = i++
+  container.append(newCard)
+})
