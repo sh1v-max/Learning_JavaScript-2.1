@@ -21,7 +21,7 @@ usernameInput.addEventListener('input', () => {
 let inputVal
 
 usernameInput.addEventListener('input', (event) => {
-  console.log(event)
+  // console.log(event)
   // returns the event object
   // InputEvent {isTrusted: true, data: 'a', isComposing: false, inputType: 'insertText', dataTransfer: null, …}
   // console.log(event.target.value)
@@ -46,6 +46,7 @@ usernameInput.addEventListener('change', (event) => {
 usernameInput.addEventListener('focus', (event) => {
   // Triggered when an element gains focus, such as when the user clicks on an input field.
   // console.log(event)
+  console.log(event.type)
   // console.log(event.target.value)
   // returns the value of the input entered
   // inputVal = event.target.value
@@ -53,10 +54,11 @@ usernameInput.addEventListener('focus', (event) => {
   // console.log('some input')
 }) 
 
-//& focus event
+//& blur event
 usernameInput.addEventListener('blur', (event) => {
   // Fired when an element loses focus
-  console.log(event)
+  console.log(event.type)
+  // console.log(event)
   console.log(event.target.value)
   // returns the value of the input entered
   inputVal = event.target.value
