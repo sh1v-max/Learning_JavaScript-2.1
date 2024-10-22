@@ -211,6 +211,4 @@ Here’s an example that shows how to use the event object in a form event:
 
 ### reference
 to know more about Form event and Event object in DOM JS... visit:
-> - [W3School (addEventListener())](https://www.w3schools.com/jsref/met_document_addeventlistener.asp)
-> - [MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
-> - [YouTube (Recommended)](https://www.youtube.com/watch?v=J5-yOKK--78&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=112)
+> - [YouTube (Recommended)](https://www.youtube.com/watch?v=J5-yOKK--78&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=114)
