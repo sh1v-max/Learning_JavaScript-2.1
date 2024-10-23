@@ -6,5 +6,5 @@ h1.addEventListener('keypress', (e) => {
 })
 
 input.addEventListener('keypress', (e) => {
-  console.log(e)
+  console.log(e.key)
 })
