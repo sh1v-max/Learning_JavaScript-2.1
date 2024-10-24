@@ -10,6 +10,7 @@ JavaScript provides a variety of keyboard events in the DOM (Document Object Mod
    - This event is **deprecated** in modern browsers, but it was previously used for capturing character-generating key presses (like letters and numbers).
    - It's generally replaced by the `keydown` or `keyup` event for detecting key presses.
    - Modern usage has shifted away from this event, so it’s best to avoid using it in new projects.
+   - keypress wont work on shift, ctrl, alt, etc.
 
 3. **`keyup`**:
    - This event is fired **when a key is released** after being pressed down.
