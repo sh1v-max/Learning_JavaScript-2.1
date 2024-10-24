@@ -188,3 +188,9 @@ document.addEventListener('keydown', function(event) {
 - **Keyboard events** allow you to capture and react to user keyboard input in real-time, enabling functionalities like form validation, game controls, and custom keyboard shortcuts.
 - The **event object** contains useful information about which key was pressed, the key code, and whether modifier keys were used.
 
+### reference
+to know more about Keyboard events in DOM JS... visit:
+
+> - [MDN](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
+> - [](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
+> - [YouTube (Recommended)](https://www.youtube.com/watch?v=crRttpPp_4o&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=106)
