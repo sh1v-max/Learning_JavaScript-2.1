@@ -30,6 +30,3 @@ window.addEventListener('keydown', (e) => {
   console.log('Code', e.code) // log the code of the key that was pressed
   console.log('Value', e.key) // log the value that was pressed 
 }) 
-
-// keypress wont work on shift, ctrl, alt, etc.
-// keydown and keyup will work on shift, ctrl, alt, etc.
