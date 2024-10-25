@@ -40,6 +40,16 @@ addButton.addEventListener('mouseleave', (e) => {
   container.append(newCard)
 })
 
+addButton.addEventListener('mousemove', (e) => {
+  //mouseup event is fired when the mouse button is released
+  //it work just as 'click' event but it is more specific
+  console.log(e)
+  const newCard = document.createElement('div')
+  newCard.classList.add('card')
+  newCard.innerText = count++
+  container.append(newCard)
+})
+
 h1.addEventListener('mouseenter', (e) => {
   //mouseup event is fired when the mouse button is released
   //it work just as 'click' event but it is more specific
