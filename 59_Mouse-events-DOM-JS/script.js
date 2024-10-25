@@ -164,8 +164,19 @@ addButton.addEventListener('pointermove', (e) => {
   container.append(newCard)
 })
 
-//~ pointenter
+//~ pointerenter
 addButton.addEventListener('pointerenter', (e) => {
+  //pointermove event is fired when a pointing device is moved while it is over the element
+  //works for both mobile and desktop
+  console.log(e)
+  const newCard = document.createElement('div')
+  newCard.classList.add('card')
+  newCard.innerText = count++
+  container.append(newCard)
+})
+
+//~ pointerleave
+addButton.addEventListener('pointerleave', (e) => {
   //pointermove event is fired when a pointing device is moved while it is over the element
   //works for both mobile and desktop
   console.log(e)
