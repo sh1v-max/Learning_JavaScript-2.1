@@ -5,6 +5,13 @@ const container = document.querySelector('.container')
 
 let count = 0
 
+// card.addEventListener('click', () => {
+//     const newCard = document.createElement('div')
+//     newCard.classList.add('card')
+//     newCard.innerText = count++
+//     container.append(newCard)
+// })
+
 card.addEventListener('click', () => {
     const newCard = document.createElement('div')
     newCard.classList.add('card')
