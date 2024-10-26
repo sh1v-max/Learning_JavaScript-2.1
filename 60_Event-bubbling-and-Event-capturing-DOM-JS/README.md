@@ -42,6 +42,7 @@ child.addEventListener('click', function() {
 - **Explanation**: The "Child clicked!" message appears first because the button is the target element, followed by "Parent clicked!" as the event bubbles up to the parent.
 
 
+
 ## 2. **Event Capturing**
 
 ### Definition
@@ -93,7 +94,7 @@ JavaScript allows you to pass an options object to the `addEventListener` method
   }, { once: true });
   ```
 
-### Example Code with Options
+#### Example Code with Options
 ```javascript
 // Using capture and once options
 parent.addEventListener('click', function() {
@@ -110,11 +111,41 @@ child.addEventListener('click', function() {
   ```
   Parent clicked (with capture option)!
   Child clicked (once)!
-  Child clicked (once)!
   ```
 - If you click the button again, the child event will not trigger because it is set to `once`, whereas the parent event will still be invoked.
 
-## 4. **Key Differences Between Bubbling and Capturing**
+
+
+## 4. **Stopping Propagation with `stopPropagation`**
+
+### Definition
+- The `stopPropagation` method prevents the event from propagating (bubbling or capturing) further up or down the DOM tree.
+
+### Usage
+- You can use `stopPropagation` in an event listener to stop the event from reaching other event handlers in the propagation path.
+
+### Code Example
+```javascript
+child.addEventListener('click', function(event) {
+    console.log('Child clicked!');
+    event.stopPropagation(); // Prevents the event from bubbling up
+});
+
+// Add event listener to the parent
+parent.addEventListener('click', function() {
+    console.log('Parent clicked (will not be triggered if child is clicked)!');
+});
+```
+
+### Output on Click
+- If you click the button, the output will be:
+  ```
+  Child clicked!
+  ```
+- **Explanation**: The "Parent clicked!" message will not appear because the `stopPropagation` method was called in the child’s event listener, stopping the event from bubbling up to the parent.
+
+
+## 5. **Key Differences Between Bubbling and Capturing**
 
 | Feature              | Event Bubbling                        | Event Capturing                        |
 |----------------------|--------------------------------------|---------------------------------------|
@@ -126,7 +157,7 @@ child.addEventListener('click', function() {
 
 
 ## Conclusion
-- Understanding event bubbling and capturing is essential for effective event handling in web applications.
+- Understanding event bubbling, capturing, and the use of `stopPropagation` is essential for effective event handling in web applications.
 - Event bubbling is the default mode of propagation, while event capturing is less commonly used but can be beneficial in certain scenarios.
 - By utilizing both phases and the options available, developers can create more dynamic and responsive user interfaces.
 
@@ -135,3 +166,4 @@ To know more about Mouse events in DOM JS, visit:
 
 > - [freeCodeCamp](https://www.freecodecamp.org/news/event-bubbling-and-event-capturing-in-javascript/)
 > - [YouTube (Recommended)](https://www.youtube.com/watch?v=lfRgu5dLh8E&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=106)
+
