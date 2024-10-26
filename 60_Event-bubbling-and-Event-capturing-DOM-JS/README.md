@@ -72,23 +72,66 @@ child.addEventListener('click', function() {
 - **Explanation**: "Parent clicked (capturing)!" appears first because the event is captured by the parent before reaching the child.
 
 
-## 3. **Key Differences Between Bubbling and Capturing**
+## 3. **Using Options with Event Listeners**
+
+### 3.1 **Event Listener Options**
+JavaScript allows you to pass an options object to the `addEventListener` method, which can control various behaviors of the event listener.
+
+- **Capture Phase**: You can specify whether the event listener should be invoked during the capturing phase by setting the `capture` option to `true`.
+
+  ```javascript
+  parent.addEventListener('click', function() {
+      console.log('Parent clicked (with capture option)!');
+  }, { capture: true });
+  ```
+
+- **Once**: The `{ once: true }` option allows the event listener to be invoked at most once after being added. After the first invocation, the listener is automatically removed.
+
+  ```javascript
+  child.addEventListener('click', function() {
+      console.log('Child clicked (once)!');
+  }, { once: true });
+  ```
+
+### Example Code with Options
+```javascript
+// Using capture and once options
+parent.addEventListener('click', function() {
+    console.log('Parent clicked (with capture option)!');
+}, { capture: true });
+
+child.addEventListener('click', function() {
+    console.log('Child clicked (once)!');
+}, { once: true });
+```
+
+### Output on Click
+- If you click the button, you will see:
+  ```
+  Parent clicked (with capture option)!
+  Child clicked (once)!
+  Child clicked (once)!
+  ```
+- If you click the button again, the child event will not trigger because it is set to `once`, whereas the parent event will still be invoked.
+
+## 4. **Key Differences Between Bubbling and Capturing**
+
 | Feature              | Event Bubbling                        | Event Capturing                        |
 |----------------------|--------------------------------------|---------------------------------------|
 | **Direction**        | From target to root                  | From root to target                   |
 | **Default Behavior** | Enabled by default                   | Disabled by default (useCapture: false) |
 | **Use Case**         | Commonly used for event delegation   | Rarely used, but useful in specific scenarios |
 | **Event Listener**   | Typically added without capturing    | Added with `useCapture: true`         |
+| **Options**          | Can use `{ once: true }`            | Can use `{ once: true }`              |
 
 
 ## Conclusion
 - Understanding event bubbling and capturing is essential for effective event handling in web applications.
 - Event bubbling is the default mode of propagation, while event capturing is less commonly used but can be beneficial in certain scenarios.
-- By utilizing both phases, developers can create more dynamic and responsive user interfaces.
+- By utilizing both phases and the options available, developers can create more dynamic and responsive user interfaces.
 
-### reference
-to know more about Mouse events in DOM JS... visit:
+### Reference
+To know more about Mouse events in DOM JS, visit:
 
-> - [MDN](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent)
-> - [W3School](https://www.w3schools.com/jsref/obj_mouseevent.asp)
+> - [freeCodeCamp](https://www.freecodecamp.org/news/event-bubbling-and-event-capturing-in-javascript/)
 > - [YouTube (Recommended)](https://www.youtube.com/watch?v=lfRgu5dLh8E&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=106)

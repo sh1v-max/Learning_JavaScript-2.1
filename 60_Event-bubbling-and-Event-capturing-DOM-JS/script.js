@@ -29,6 +29,7 @@ blue.addEventListener('click', (e) => {
     console.log('1. blue event listened')
 }, {capture: true, once: true})
 //{once: true} is used to set the event to be executed only once.
+//it will remove the event listener after the event is executed once.
 
 // true in addEventListener() method is used to set the event to be captured, not bubbled.
 //it will print the output in the order of the event capturing.
