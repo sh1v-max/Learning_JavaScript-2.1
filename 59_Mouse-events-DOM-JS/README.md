@@ -160,19 +160,17 @@ Here’s a comprehensive note on mouse events in JavaScript within the DOM, alon
     });
     ```
 
-
-## Summary
-
-Mouse events in JavaScript play a significant role in creating dynamic and interactive web applications. By understanding and implementing these events, developers can effectively respond to user actions, enhancing the overall user experience. Key events include basic actions like `click`, `mousedown`, and `mouseup`, as well as more advanced interactions such as `mousemove`, `drag`, and touch events for mobile devices. Mastery of these events is essential for modern web development, allowing for the creation of responsive and engaging interfaces.
-
 ## **Event Object Properties in Mouse Events**
+Mouse events come with several properties that provide details about the mouse interaction. Key properties include:
 
-Each mouse event comes with an event object containing useful properties:
-
-- **event.clientX / event.clientY**: X and Y coordinates of the mouse relative to the viewport.
-- **event.screenX / event.screenY**: X and Y coordinates of the mouse relative to the screen.
-- **event.button**: Indicates which mouse button was pressed (0 for left, 1 for middle, 2 for right).
-- **event.altKey / event.shiftKey / event.ctrlKey / event.metaKey**: Boolean values indicating if these modifier keys were pressed during the event.
+- **`clientX`**: The horizontal coordinate of the mouse pointer relative to the viewport (the visible area of the web page).
+- **`clientY`**: The vertical coordinate of the mouse pointer relative to the viewport.
+- **`screenX`**: The horizontal coordinate of the mouse pointer relative to the entire screen.
+- **`screenY`**: The vertical coordinate of the mouse pointer relative to the entire screen.
+- **`button`**: Indicates which mouse button was pressed (0: left button, 1: middle button, 2: right button).
+- **`buttons`**: Indicates which buttons are currently pressed.
+- **`target`**: The DOM element that triggered the event.
+- **`altKey`, `ctrlKey`, `shiftKey`, `metaKey`**: Boolean values indicating whether these modifier keys were pressed when the event occurred.
 
 ## **Examples of Practical Uses for Mouse Events**
 
@@ -207,7 +205,11 @@ document.addEventListener('mouseup', function() {
 });
 ```
 
-### **Summary of Mouse Events**
+## Summary
+
+Mouse events in JavaScript play a significant role in creating dynamic and interactive web applications. By understanding and implementing these events, developers can effectively respond to user actions, enhancing the overall user experience. Key events include basic actions like `click`, `mousedown`, and `mouseup`, as well as more advanced interactions such as `mousemove`, `drag`, and touch events for mobile devices. Mastery of these events is essential for modern web development, allowing for the creation of responsive and engaging interfaces.
+
+
 
 | Event       | Description                                                | Triggered On          | Example Use                       |
 |-------------|------------------------------------------------------------|-----------------------|-----------------------------------|
