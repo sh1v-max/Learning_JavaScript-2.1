@@ -226,7 +226,7 @@ Mouse events in JavaScript play a significant role in creating dynamic and inter
 These mouse events give you control over how the user interacts with elements using the mouse, enhancing the interactivity of your web pages.
 
 ### reference
-to know more about Keyboard events in DOM JS... visit:
+to know more about Mouse events in DOM JS... visit:
 
 > - [MDN](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent)
 > - [W3School](https://www.w3schools.com/jsref/obj_mouseevent.asp)
