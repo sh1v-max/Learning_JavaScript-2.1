@@ -21,7 +21,11 @@ h1 {
 }
 
 .add-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  font-size: 36px;
   background-color: cadetblue;
   color: black;
   position: absolute;
