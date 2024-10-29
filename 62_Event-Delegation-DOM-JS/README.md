@@ -52,6 +52,7 @@ Event delegation is a powerful technique in DOM JavaScript that enhances perform
 
 
 
+### Reference
 To know more about Mouse events in DOM JS, visit:
 
 > - [freeCodeCamp](https://www.freecodecamp.org/news/event-delegation-javascript/)
