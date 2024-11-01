@@ -18,6 +18,7 @@ addCardBtn.addEventListener('click', () => {
 //   })
   //this will add the event listener to all the new card that we create
   //with click event and when clicked, it will remove the card
+  //! this is not a good way to do this, as we are adding event listener to each card
   container.append(newCard)
 })
 
