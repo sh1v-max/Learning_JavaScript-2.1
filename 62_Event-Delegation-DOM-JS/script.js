@@ -31,13 +31,6 @@ addCardBtn.addEventListener('click', () => {
 //by doing this we basically delete the card that we click on
 //(ie the button that on clicking, generating the cards)
 
-container.addEventListener('click', (e) => {
-    // console.log(e.target)
-    // e.target.remove()
-    if(e.target !== container) {
-        e.target.remove()
-    }
-})
 //!this is called event delegation, we are adding the event listener to the parent element
 //and then checking if the target element is the card or not
 //if it is then we remove it
