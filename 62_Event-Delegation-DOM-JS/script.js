@@ -22,14 +22,6 @@ addCardBtn.addEventListener('click', () => {
   container.append(newCard)
 })
 
-// cardList.forEach(card => {
-//     console.log(card)
-//     card.addEventListener('click', (e) => {
-//         card.remove()
-//     })
-// })
-//by doing this we basically delete the card that we click on
-//(ie the button that on clicking, generating the cards)
 
 container.addEventListener('click', (e) => {
     // console.log(e.target)
