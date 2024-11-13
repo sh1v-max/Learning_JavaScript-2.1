@@ -82,5 +82,10 @@ if (typeof(Storage) !== 'undefined') {
 }
 ```
 
-## References
-- [MDN Web Docs: Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+### Reference
+To know more about Local Storage in JS, visit:
+
+> - [W3School](https://www.w3schools.com/jsref/prop_win_localstorage.asp)
+> - [FreeCodeCamp](https://www.freecodecamp.org/news/use-local-storage-in-modern-applications/)
+> - [YouTube (Recommended)](https://www.youtube.com/watch?v=1ofttBIG5R8&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=113)
+
