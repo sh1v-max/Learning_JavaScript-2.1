@@ -38,6 +38,10 @@ const myData = {
 nameInput.addEventListener('input', (e) => {
   myData.name = e.target.value
   localStorage.setItem('myData', JSON.stringify(myData))
+  // as we cant store object in local storage, we have to convert it into string
+  // JSON.stringify() is used to convert object into string
+  // and the string is called json string
+  //~ and we can use JSON.parse() to convert json string back into object
 })
 
 ageInput.addEventListener('input', (e) => {
