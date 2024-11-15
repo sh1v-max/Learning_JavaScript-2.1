@@ -78,3 +78,8 @@ This snippet initializes a map centered at a specific location and places a mark
 ## Conclusion
 
 APIs in JavaScript open a wide range of possibilities, from interacting with web page elements to fetching and displaying data from external sources. Whether you're modifying the DOM or making network requests, APIs are essential for creating dynamic and interactive web applications.
+
+## Reference
+To know more about API in JavaScript, you can visit:
+ - []()
+ - [YouTube](https://www.youtube.com/watch?v=wfFoCI6mtvc&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=116)
