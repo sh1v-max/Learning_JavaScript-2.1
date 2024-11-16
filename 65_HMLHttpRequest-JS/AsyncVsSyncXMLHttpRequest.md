@@ -1,9 +1,11 @@
 ## Synchronous vs Asynchronous Requests
 In the context of `XMLHttpRequest`, **asynchronous** means that the request is sent to the server **without blocking the rest of your code** from executing. This allows the browser to continue processing other tasks (such as responding to user input or rendering the page) while waiting for the server to send back the response.
 
+- `by default, async property is set to 'true'`
+
 #### **1. Synchronous (Blocking) Requests**
 
-In a **synchronous** request, the code execution **halts** at the point where the request is made, and nothing else happens until the server has responded.
+In a **synchronous** request `(async set to 'false')`, the code execution **halts** at the point where the request is made, and nothing else happens until the server has responded.
 
 **Example (Synchronous Request):**
 
@@ -24,7 +26,7 @@ if (xhr.status === 200) {
 
 #### **2. Asynchronous (Non-blocking) Requests**
 
-In an **asynchronous** request, the code continues executing without waiting for the request to complete. The request is sent to the server in the background, and the server’s response is handled when it’s ready—without freezing the page or blocking any further code execution.
+In an **asynchronous** request `(async set to 'true')`, the code continues executing without waiting for the request to complete. The request is sent to the server in the background, and the server’s response is handled when it’s ready—without freezing the page or blocking any further code execution.
 
 **Example (Asynchronous Request):**
 
