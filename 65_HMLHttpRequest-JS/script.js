@@ -48,9 +48,28 @@ const button = document.querySelector('button')
 
 
 button.addEventListener('click', () => {
-  fetch('https://dog.ceo/api/breeds/image/random')
-    .then((response) => response.json())
-    .then((json) => {
-      image.src = json.message
-    })
+  // fetch('https://dog.ceo/api/breeds/image/random')
+  //   .then((response) => response.json())
+  //   .then((json) => {
+  //     image.src = json.message
+  //   })
 })
+
+XMLHttpRequest
+// output: ƒ XMLHttpRequest() { [native code] }
+//~ XMLHttpRequest()
+// output: error, will say 'its constructor, use new keyword'
+new XMLHttpRequest()
+// output: XMLHttpRequest {onreadystatechange: null, 
+// readyState: 0, timeout: 0, withCredentials: false, 
+// upload: XMLHttpRequestUpload, …}
+
+function sayHi(){
+  console.log('Hi')
+}
+sayHi()
+// output: Hi
+new sayHi()
+// output: Hi
+// sayHi {}
+// it will create an object of the function sayHi when we use 'new' keyword
