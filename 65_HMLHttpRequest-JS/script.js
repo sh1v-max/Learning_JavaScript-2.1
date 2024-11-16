@@ -47,13 +47,13 @@ const image = document.querySelector('img')
 const button = document.querySelector('button')
 
 
-button.addEventListener('click', () => {
-  // fetch('https://dog.ceo/api/breeds/image/random')
-  //   .then((response) => response.json())
-  //   .then((json) => {
-  //     image.src = json.message
-  //   })
-})
+// button.addEventListener('click', () => {
+//   fetch('https://dog.ceo/api/breeds/image/random')
+//     .then((response) => response.json())
+//     .then((json) => {
+//       image.src = json.message
+//     })
+// })
 
 XMLHttpRequest
 // output: ƒ XMLHttpRequest() { [native code] }
@@ -67,9 +67,26 @@ new XMLHttpRequest()
 function sayHi(){
   console.log('Hi')
 }
-sayHi()
+// sayHi()
 // output: Hi
-new sayHi()
+// new sayHi()
 // output: Hi
 // sayHi {}
-// it will create an object of the function sayHi when we use 'new' keyword
+// when we use 'new' keyword it will create an object of the function sayHi
+
+button.addEventListener('click', () => {
+  // fetch('https://dog.ceo/api/breeds/image/random')
+  //   .then((response) => response.json())
+  //   .then((json) => {
+  //     image.src = json.message
+  //   })
+  const xhr = new XMLHttpRequest()
+  console.log(xhr)
+
+  xhr.addEventListener('load', () => { // load event is fired when the request has successfully completed
+    console.log('successfully loaded')
+  })
+  
+  xhr.open('GET', 'https://dog.ceo/api/breeds/image/random')
+  xhr.send()
+})
