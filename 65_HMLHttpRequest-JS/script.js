@@ -86,17 +86,29 @@ button.addEventListener('click', () => {
   // it will automatically parse the response to json format
   // so no need to use parse method
   
-  xhr.addEventListener('load', () => { // load event is fired when the request has successfully completed
+  //^ using eventlistener with load property
+  // xhr.addEventListener('load', () => { // load event is fired when the request has successfully completed
     // console.log(xhr.response) // its in json format
     // console.log(JSON.parse(xhr.response)) // converting json to js object
-    image.src = xhr.response.message
-    console.log('successfully loaded')
-    console.log(xhr)
+    // image.src = xhr.response.message
+    // console.log(xhr)
+    // console.log('successfully loaded')
     // setting the src of the image to the url of the image
-  })
+  // })
+  
+  //^ using onload property
+  xhr.onload = () => {
+    image.src = xhr.response.message
+    console.log(xhr)
+    console.log('successfully loaded')
+  }
   
   xhr.open('GET', 'https://dog.ceo/api/breeds/image/random')
   xhr.send()
   // send() method sends the request to the server
   // now how to access the response?
 })
+
+//! but at the end, we have to use "fetch" method instead of "XMLHttpRequest" method
+//! because it is more modern and easy to use
+//^ XMLHttpRequest is important in for interview point of view
