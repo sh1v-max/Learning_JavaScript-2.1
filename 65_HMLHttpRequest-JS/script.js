@@ -81,12 +81,22 @@ button.addEventListener('click', () => {
   //     image.src = json.message
   //   })
   const xhr = new XMLHttpRequest()
-  console.log(xhr)
 
+  xhr.responseType = 'json'
+  // it will automatically parse the response to json format
+  // so no need to use parse method
+  
   xhr.addEventListener('load', () => { // load event is fired when the request has successfully completed
+    // console.log(xhr.response) // its in json format
+    // console.log(JSON.parse(xhr.response)) // converting json to js object
+    image.src = xhr.response.message
     console.log('successfully loaded')
+    console.log(xhr)
+    // setting the src of the image to the url of the image
   })
   
   xhr.open('GET', 'https://dog.ceo/api/breeds/image/random')
   xhr.send()
+  // send() method sends the request to the server
+  // now how to access the response?
 })
