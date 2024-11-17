@@ -3,6 +3,9 @@
 
 ![image](./image/image.png)
 
+
+
+
 ## Solution: -
 Great question! The reason you're able to use the `xhr.addEventListener('load', ...)` **before** calling `xhr.open()` and `xhr.send()` lies in how **`XMLHttpRequest`** (XHR) works.
 
