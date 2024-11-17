@@ -4,19 +4,15 @@ const blockingBtn = document.querySelector('.blocking-btn')
 
 button.addEventListener('click', () => {
   const xhr = new XMLHttpRequest()
-
-  // xhr.responseType = 'json'
+  // xhr.responseType = 'json' // for synchronous function, you're not allowed to set response type
+  console.log(xhr.response) 
 
   xhr.addEventListener('load', () => {
     image.src = JSON.parse(xhr.response).message
-    console.log(xhr)
+    console.log(xhr.response)
   })
 
-  // xhr.onload = () => {
-  //   image.src = xhr.response.message
-  //   console.log(xhr)
-  // }
-
+  //^ using third parameter as false makes it synchronous
   xhr.open('GET', 'https://dog.ceo/api/breeds/image/random', false)
   xhr.send()
 })
