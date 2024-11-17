@@ -1,10 +1,9 @@
 const image = document.querySelector('img')
 const button = document.querySelector('button')
 
-
 button.addEventListener('click', () => {
+  // debugger;
   const xhr = new XMLHttpRequest()
-
   xhr.responseType = 'json'
   
   //^ using eventlistener with load property
@@ -19,6 +18,7 @@ button.addEventListener('click', () => {
   
   //^ using onload property
   xhr.onload = () => {
+    // debugger
     image.src = xhr.response.message
     console.log(xhr)
     console.log('successfully loaded')
