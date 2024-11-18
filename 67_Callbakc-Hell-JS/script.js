@@ -42,7 +42,7 @@ makeHttpRequest('GET', 'https://dummyjson.com/users', (data) => {
   // console.log(data.users[0])  // first user
   // console.log('hii')
   console.log(data)  // id of first user
-  makeHttpRequest('GET', `https://dummyjson.com/posts/user/${data.users[0].id}`, (data) => {
+  makeHttpRequest('GET', `https://dummyjson.com/posts/user/${data.users[5].id}`, (data) => {
     console.log(data)
   })
 })
