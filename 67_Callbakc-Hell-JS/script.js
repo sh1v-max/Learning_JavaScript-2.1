@@ -43,6 +43,11 @@ makeHttpRequest('GET', 'https://dummyjson.com/users', (data) => {
   // console.log('hii')
   console.log(data)  // id of first user
   makeHttpRequest('GET', `https://dummyjson.com/posts/user/${data.users[5].id}`, (data) => {
-    console.log(data)
+    console.log(data.posts)
+    console.log(data.posts[0])
+    console.log(data.posts[0].id)
+    makeHttpRequest('GET', `https://dummyjson.com/comments/post/${data.posts[0].id}`, (data) => {
+      console.log(data)
+    })
   })
 })
