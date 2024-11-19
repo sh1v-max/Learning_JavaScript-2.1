@@ -30,3 +30,6 @@ p.then((data)  => {
 }).catch((err) => {
   console.log(err)
 })
+
+// then is called when out promise is resolved
+// catch is called when our promise is rejected
