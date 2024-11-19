@@ -36,18 +36,20 @@ function makeHttpRequest(method, url, callback) {
 }
 //^ now the above function is reusable
 
-makeHttpRequest('GET', 'https://dummyjson.com/users', (data) => {
+makeHttpRequest('GET', 'https://dummyjson.com/users', (userData) => {
   // console.log(data) // all the data
   // console.log(data.users) // all the users
   // console.log(data.users[0])  // first user
   // console.log('hii')
-  console.log(data)  // id of first user
-  makeHttpRequest('GET', `https://dummyjson.com/posts/user/${data.users[5].id}`, (data) => {
-    console.log(data.posts)
-    console.log(data.posts[0])
-    console.log(data.posts[0].id)
-    makeHttpRequest('GET', `https://dummyjson.com/comments/post/${data.posts[0].id}`, (data) => {
-      console.log(data)
+  console.log(userData)  // id of first user
+  // console.log(userData.users[4])
+  makeHttpRequest('GET', `https://dummyjson.com/posts/user/${userData.users[0].id}`, (postData) => {
+    console.log(postData)
+    makeHttpRequest('GET', `https://dummyjson.com/comments/post/${postData.posts[0].id}`, (commentsData) => {
+      console.log(commentsData.comments[0].user.id)
+      makeHttpRequest('GET',`https://dummyjson.com/users/${commentsData.comments[0].user.id}`, (commentUser) => {
+        console.log(commentUser)
+      })
     })
   })
 })
