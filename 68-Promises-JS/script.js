@@ -29,7 +29,11 @@ p.then((data)  => {
   console.log(data)
 }).catch((err) => {
   console.log(err)
+}).finally(() => {
+  console.log('finally')
 })
 
 // then is called when out promise is resolved
 // catch is called when our promise is rejected
+// finally will be called in both the cases and it takes no data
+//! promises are commonly used in the browser environment to handle async operations
