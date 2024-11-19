@@ -53,3 +53,15 @@ makeHttpRequest('GET', 'https://dummyjson.com/users', (userData) => {
     })
   })
 })
+
+
+// makeHttpRequest('GET', 'https://dummyjson.com/users', (userData) => {
+//   makeHttpRequest('GET', `https://dummyjson.com/posts/user/${userData.users[0].id}`, (postData) => {
+//     makeHttpRequest('GET', `https://dummyjson.com/comments/post/${postData.posts[0].id}`, (commentsData) => {
+//       makeHttpRequest('GET',`https://dummyjson.com/users/${commentsData.comments[0].user.id}`, (commentUser) => {
+//         console.log(commentUser)
+//       })
+//     })
+//   })
+// })
+//! this triangle of doom is called callback hell
