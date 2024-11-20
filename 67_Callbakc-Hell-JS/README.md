@@ -63,7 +63,7 @@ getData1((result1) => {
 
    fetchData();
    ```
-   
+
 3. **Modularizing Code**
    - Break down your code into smaller, reusable functions to keep the logic manageable and organized.
 
