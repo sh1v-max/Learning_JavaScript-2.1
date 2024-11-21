@@ -114,3 +114,8 @@ makeHttpRequest('GET', 'https://dummyjson.com/users')
 
 ### **Conclusion**
 Promises are a powerful tool to manage asynchronous code and eliminate callback hell. By chaining `.then()` blocks and centralizing error handling, Promises make your code more readable, maintainable, and scalable.
+
+
+## Reference
+To learn more about Fixing callback hell in JS, visit:
+- [YouTube](https://www.youtube.com/watch?v=T2k8JKO2vCc&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=121)
