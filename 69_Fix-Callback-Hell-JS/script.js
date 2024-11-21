@@ -6,6 +6,10 @@ function makeHttpRequest(method, url) {
     xhr.addEventListener('load', () => {
       resolve(xhr.response)
     })
+    xhr.addEventListener('error', () => {
+      // console.log('Request failed')
+      reject('Request failed')
+    })
   })
 
   xhr.open(method, url)
@@ -30,6 +34,9 @@ makeHttpRequest('GET', 'https://dummyjson.com/users')
 .then((postsData) => makeHttpRequest('GET', `https://dummyjson.com/comments/post/${postsData.posts[0].id}`))
 .then((commentsData) => makeHttpRequest('GET', `https://dummyjson.com/users/${commentsData.comments[0].user.id}`))
 .then((commentUserData) => console.log(commentUserData))
+.catch((error) => {
+  console.log('Request failed')
+})
 // we can add as many .then as we want to chain the promises
 
 // makeHttpRequest('GET', 'https://dummyjson.com/users')
