@@ -37,8 +37,39 @@
 // })
 // above code can be written as below
 
-fetch('https://dummyjson.com/products').then((res) => {
-  return res.json()// as it return a promise, we can apply .then
-}).then((data) => {
-  console.log(data)
+//& fetch('https://dummyjson.com/products')
+// .then((res) => {
+//   return res.json()// as it return a promise, we can apply .then
+// }).then((data) => {
+//   console.log(data)
+// })
+
+// above code can be written as below (using implicit return)
+
+//& fetch('https://dummyjson.com/products')
+// .then((res) => res.json())
+// .then((data) => console.log(data))
+
+// fetch('https://dummyjson.com/products', {
+//   method: 'GET' // default is GET
+  // method:'POST'
+// })
+// .then(res => res.json())
+// .then((data) => console.log(data))
+// .then(console.log);
+// .catch((err) => {
+//   console.log(err)
+// })
+
+fetch('https://dummyjsn.com/products/add', {
+  method: 'POST',
+  body: JSON.stringify({
+    title: 'BMW Pencil',
+    /* other product data */
+  })
+})
+.then(res => res.json())
+.then(console.log)
+.catch((err) => {
+  console.log(err)
 })
