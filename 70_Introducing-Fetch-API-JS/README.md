@@ -1,5 +1,5 @@
 
-# Fetch API
+# Fetch API in JavaScript
 
 The **Fetch API** is a modern interface in JavaScript that allows you to make HTTP requests (GET, POST, PUT, DELETE, etc.) asynchronously. It is a replacement for older methods like `XMLHttpRequest` and provides a more flexible and powerful way to interact with servers.
 
