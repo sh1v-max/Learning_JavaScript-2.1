@@ -202,7 +202,6 @@ getData();
 
 The **Fetch API** is a powerful and modern way to interact with resources over the network. It simplifies working with asynchronous HTTP requests, supports promises, and can be easily integrated with other asynchronous operations using `async/await`. Fetch is a great alternative to the older `XMLHttpRequest` method, providing a cleaner and more readable approach to handling HTTP requests in JavaScript.
 
-
 # Reference
 If you want to know more about Fetch API in JS, visit: 
 - [FreeCodeCamp](https://www.freecodecamp.org/news/javascript-fetch-api-for-beginners/)
