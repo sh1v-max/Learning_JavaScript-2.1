@@ -18,11 +18,20 @@
 //   throw new Error('error in program')
 // }// output will be a promise and an error
 
+//~ async function makeRequest(){
+//   const url = 'https://dummyjson.com/products'
+//   const responsePromise = fetch(url) // as fetch returns a promise and we can store in into another variable
+//   responsePromise.then(res => res.json())
+//   .then(data => {
+//     console.log(data)
+    // this will return data
+//   })
+// }
+//^ we can do the same thing using async await
+
 async function makeRequest(){
   const url = 'https://dummyjson.com/products'
-  const responsePromise = fetch(url) // as fetch returns a promise and we can store in into another variable
-  console.log(responsePromise)
+  const responsePromise = fetch(url) 
+  
 }
-
-const res = makeRequest()
-res.then(data => console.log(data)) // output will be a promise and an error
+makeRequest()
