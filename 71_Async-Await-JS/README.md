@@ -265,5 +265,5 @@ fetchData().catch(error => console.error(error)); // Catching the error
 
 ## Reference
 If you want to know more about Async/Await in JS, visit:
-- [FreeCodeCamp]()
-- [YouTube]()
+- [FreeCodeCamp](https://www.freecodecamp.org/news/javascript-async-await/)
+- [YouTube](https://www.youtube.com/watch?v=qHKGk-RPtpA&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=134)
