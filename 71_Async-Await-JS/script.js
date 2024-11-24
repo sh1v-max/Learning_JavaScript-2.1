@@ -123,13 +123,16 @@ async function makeAsyncRequest() {
   // const response = await fetch(url) 
   // const data = await response.json()
   const data = await (await fetch(url)).json() // above 2 lines can be written in one line
-  console.log(data)
+  return data
+  // console.log(data)
 }
 
-makeAsyncRequest()
+// makeAsyncRequest()
+// makeAsyncRequest().then(data => console.log(data))
+makeAsyncRequest().then(console.log)
 
 //! normally, await doesn't work outside of async function, or top level bodies of module
-// now make is module:
+// now make is module:kz
 // <script src="script.js" type="module" defer></script>  //add type="module" in script tag
 // tells the browser that the JavaScript file being linked is an ES6 module
 // it creates a module scope
