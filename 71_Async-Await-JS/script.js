@@ -6,7 +6,7 @@
 
 //~ function hi(){
 //   console.log('hii')
-  // throw 'error in program' //throwing an error
+// throw 'error in program' //throwing an error
 //   throw new Error('error in program') // same as above plus it will show some extra info like line no
 //   console.log('bye') //unreachable code
 // }
@@ -24,24 +24,43 @@
 //   responsePromise.then(res => res.json())
 //   .then(data => {
 //     console.log(data)
-    // this will return data
+// this will return data
 //   })
 // }
 
 //^ we can do the same thing using async await
-//& the await keyword in javascript is used inside an async function to pause execution 
+//& async keyword simply makes a function asynchronous, and the function always return a promise
+//& the await keyword in javascript is used inside an async function to pause execution
 //& of the function until a promise is resolved or rejected
 //& await makes the async code look synchronous, it doesn't wait in main thread
 //await returns the result of the promise. it waits for the promise to resolve and then returns the result.
 //! await wont allow the code to move forward until the promise is resolved
-async function makeRequest(){
+
+//~ async function makeRequest(){
+//   const url = 'https://dummyjson.com/products'
+// const responsePromise = fetch(url) // fetch returns a promise
+// output: Promise {<pending>}
+// console.log('hello')
+// const response = await fetch(url) // fetch with await return response and will store it in "response" variable
+//output: Response {type: "cors", url: "https://dummyjson.com/products", redirected: false, status: 200, ok: true, …}
+//   console.log(response)
+//   console.log('hello')
+// }
+// makeRequest()
+
+//^ async function with another function
+async function makeRequest() {
   const url = 'https://dummyjson.com/products'
-  // const responsePromise = fetch(url) // fetch returns a promise
-  // output: Promise {<pending>}
-  console.log('hello')
-  const response = await fetch(url) // fetch with await return response and will store it in "response" variable
-  //output: Response {type: "cors", url: "https://dummyjson.com/products", redirected: false, status: 200, ok: true, …}
+  const response = await fetch(url)
+  // after this line, it will wait for response but simultaneously 
+  // it will run the next part(skips next 2 lines until it gets the response)
   console.log(response)
   console.log('hello')
 }
-makeRequest()
+
+//after async line, the parser will wait for the response and then it will run the next line
+//till then, this function will be executed in the background
+function addTwoNumbers(){
+  // console.log('hello')
+  return 10+20
+}
