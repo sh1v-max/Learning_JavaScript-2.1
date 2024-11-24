@@ -28,6 +28,7 @@
 //   })
 // }
 
+//============================================================================
 //^ we can do the same thing using async await
 //& async keyword simply makes a function asynchronous, and the function always return a promise
 //& the await keyword in javascript is used inside an async function to pause execution
@@ -48,6 +49,7 @@
 // }
 // makeRequest()
 
+//============================================================================
 //^ async function with another function
 // async function makeRequest() {
 //   const url = 'https://dummyjson.com/products'
@@ -65,7 +67,7 @@
 //   return 10+20
 // }
 
-
+//==============================================================================
 async function makeAsyncRequest() {
   const url = 'https://dummyjson.com/products'
   const response = await fetch(url)
@@ -78,8 +80,10 @@ function makeSyncRequest(){
   xhr.addEventListener('load', () => {
     console.log(xhr)
   })
-  xhr.open('GET', 'https://dummyjson.com/products')
+  xhr.open('GET', 'https://dummyjson.com/products', false)
   xhr.send()
+  // here we making xhr xhr synchronous using false, but in this case, it will block the main thread
+  // but in case of await/async, it will not block the main thread
 }
 
 function addTwoNumbers(){
