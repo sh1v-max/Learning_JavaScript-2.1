@@ -34,6 +34,7 @@
 //& the await keyword in javascript is used inside an async function to pause execution
 //& of the function until a promise is resolved or rejected
 //& await makes the async code look synchronous, it doesn't wait in main thread
+//& await works same as then() method, but it is more cleaner and easier to read
 //await returns the result of the promise. it waits for the promise to resolve and then returns the result.
 //! await wont allow the code to move forward until the promise is resolved
 
@@ -51,11 +52,11 @@
 
 //============================================================================
 //^ async function with another function
-// async function makeRequest() {
+//~ async function makeRequest() {
 //   const url = 'https://dummyjson.com/products'
 //   const response = await fetch(url)
-  // after this line, it will wait for response but simultaneously 
-  // it will run the next part(skips next 2 lines until it gets the response)
+// after this line, it will wait for response but simultaneously
+// it will run the next part(skips next 2 lines until it gets the response)
 //   console.log(response)
 //   console.log('hello')
 // }
@@ -63,29 +64,67 @@
 //after async line, the parser will wait for the response and then it will run the next line
 //till then, this function will be executed in the background
 // function addTwoNumbers(){
-  // console.log('hello')
+// console.log('hello')
 //   return 10+20
 // }
 
 //==============================================================================
+// example with different function to illustrate synchronous and asynchronous behavior
+
+//~ async function makeAsyncRequest() {
+//   const url = 'https://dummyjson.com/products'
+//   const response = await fetch(url)
+//   console.log(response)
+//   console.log('hello')
+// }
+
+// function makeSyncRequest(){
+// const xhr = new XMLHttpRequest()
+// xhr.addEventListener('load', () => {
+//   console.log(xhr)
+// })
+// xhr.open('GET', 'https://dummyjson.com/products', false)
+// xhr.send()
+// here we making xhr xhr synchronous using false, but in this case, it will block the main thread
+// but in case of await/async, it will not block the main thread
+// }
+
+// function addTwoNumbers(){
+//   return 10+20
+// }
+
+//==============================================================================
+//~ async function makeAsyncRequest() {
+//   const url = 'https://dummyjson.com/products'
+//   const response = await fetch(url) // this will fetch the response and return it
+//   const data = await response.json() // this will convert the response into json and return the data
+//   console.log(data)
+//   console.log('hello')
+// }
+
+// makeAsyncRequest()
+
+//! await works same as then() method, but it is more cleaner and easier to read
+
+//==============================================================================
+//~ async function makeAsyncRequest() {
+//   const url = 'https://dummyjson.com/products'
+//   const response = await fetch(url) // this will fetch the response and return it
+//   const data = await response.json() // this will convert the response into json and return the data
+//   console.log(data)
+//   console.log('hello')
+// }
+
+// makeAsyncRequest()
+
+//^ can also be written as
 async function makeAsyncRequest() {
   const url = 'https://dummyjson.com/products'
-  const response = await fetch(url)
-  console.log(response)
-  console.log('hello')
+  const response = await fetch(url) // this will fetch the response and return it
+  const data = await response.json() // this will convert the response into json and return the data
+  console.log(data)
 }
 
-function makeSyncRequest(){
-  const xhr = new XMLHttpRequest()
-  xhr.addEventListener('load', () => {
-    console.log(xhr)
-  })
-  xhr.open('GET', 'https://dummyjson.com/products', false)
-  xhr.send()
-  // here we making xhr xhr synchronous using false, but in this case, it will block the main thread
-  // but in case of await/async, it will not block the main thread
-}
+makeAsyncRequest()
 
-function addTwoNumbers(){
-  return 10+20
-}
+//^ we will learn how to handle errors in async await wins try/catch in next part
