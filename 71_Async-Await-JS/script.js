@@ -27,11 +27,20 @@
     // this will return data
 //   })
 // }
-//^ we can do the same thing using async await
 
+//^ we can do the same thing using async await
+//& the await keyword in javascript is used inside an async function to pause execution 
+//& of the function until a promise is resolved or rejected
+//await returns the result of the promise. it waits for the promise to resolve and then returns the result.
+//! await wont allow the code to move forward until the promise is resolved
 async function makeRequest(){
   const url = 'https://dummyjson.com/products'
-  const responsePromise = fetch(url) 
-  
+  // const responsePromise = fetch(url) // fetch returns a promise
+  // output: Promise {<pending>}
+  console.log('hello')
+  const response = await fetch(url) // fetch with await return response and will store it in "response" variable
+  //output: Response {type: "cors", url: "https://dummyjson.com/products", redirected: false, status: 200, ok: true, …}
+  console.log(response)
+  console.log('hello')
 }
 makeRequest()
