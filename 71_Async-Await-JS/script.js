@@ -117,14 +117,34 @@
 
 // makeAsyncRequest()
 
-//^ can also be written as
+// //^ can also be written as
 async function makeAsyncRequest() {
   const url = 'https://dummyjson.com/products'
-  const response = await fetch(url) // this will fetch the response and return it
-  const data = await response.json() // this will convert the response into json and return the data
+  // const response = await fetch(url) 
+  // const data = await response.json()
+  const data = await (await fetch(url)).json() // above 2 lines can be written in one line
   console.log(data)
 }
 
 makeAsyncRequest()
+
+//! normally, await doesn't work outside of async function, or top level bodies of module
+// now make is module:
+// <script src="script.js" type="module" defer></script>  //add type="module" in script tag
+// tells the browser that the JavaScript file being linked is an ES6 module
+// it creates a module scope
+//^ now it will work fine
+
+// const url = 'https://dummyjson.com/products'
+// const response = await fetch(url) 
+// const data = await response.json()
+// const data = await (await fetch(url)).json() // above 2 lines can be written in one line
+// console.log(data)
+
+
+// when you run the code in module scope, it works differently
+// url, output: not defined
+// whether you use let, const or var, it will not work
+
 
 //^ we will learn how to handle errors in async await wins try/catch in next part
