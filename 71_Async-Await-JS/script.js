@@ -31,6 +31,7 @@
 //^ we can do the same thing using async await
 //& the await keyword in javascript is used inside an async function to pause execution 
 //& of the function until a promise is resolved or rejected
+//& await makes the async code look synchronous, it doesn't wait in main thread
 //await returns the result of the promise. it waits for the promise to resolve and then returns the result.
 //! await wont allow the code to move forward until the promise is resolved
 async function makeRequest(){
