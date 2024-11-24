@@ -49,18 +49,39 @@
 // makeRequest()
 
 //^ async function with another function
-async function makeRequest() {
-  const url = 'https://dummyjson.com/products'
-  const response = await fetch(url)
+// async function makeRequest() {
+//   const url = 'https://dummyjson.com/products'
+//   const response = await fetch(url)
   // after this line, it will wait for response but simultaneously 
   // it will run the next part(skips next 2 lines until it gets the response)
+//   console.log(response)
+//   console.log('hello')
+// }
+
+//after async line, the parser will wait for the response and then it will run the next line
+//till then, this function will be executed in the background
+// function addTwoNumbers(){
+  // console.log('hello')
+//   return 10+20
+// }
+
+
+async function makeAsyncRequest() {
+  const url = 'https://dummyjson.com/products'
+  const response = await fetch(url)
   console.log(response)
   console.log('hello')
 }
 
-//after async line, the parser will wait for the response and then it will run the next line
-//till then, this function will be executed in the background
+function makeSyncRequest(){
+  const xhr = new XMLHttpRequest()
+  xhr.addEventListener('load', () => {
+    console.log(xhr)
+  })
+  xhr.open('GET', 'https://dummyjson.com/products')
+  xhr.send()
+}
+
 function addTwoNumbers(){
-  // console.log('hello')
   return 10+20
 }
