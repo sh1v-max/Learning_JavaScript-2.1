@@ -44,7 +44,6 @@ async function greet() {
 }
 
 
-
 greet().then(result => console.log(result)); // Output: "Hello, world!"
 ```
 
