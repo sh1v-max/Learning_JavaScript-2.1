@@ -206,3 +206,4 @@ The **Fetch API** is a powerful and modern way to interact with resources over t
 If you want to know more about Fetch API in JS, visit: 
 - [FreeCodeCamp](https://www.freecodecamp.org/news/javascript-fetch-api-for-beginners/)
 - [YouTube](https://www.youtube.com/watch?v=CNwb02vgsmc&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=124)
+- [YouTube (ChaiAurCode)](https://www.youtube.com/watch?v=Rive84an6Lc&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=44)
