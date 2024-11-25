@@ -43,6 +43,7 @@ async function greet() {
   return "Hello, world!";
 }
 
+
 greet().then(result => console.log(result)); // Output: "Hello, world!"
 ```
 
