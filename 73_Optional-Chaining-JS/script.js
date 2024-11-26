@@ -37,4 +37,4 @@ const a = 'city'
 console.log(user.address?.['city']); //output: delhi
 console.log(user.address?.[a]); //output: delhi
 // console.log(user.getFullName()) //output: Wazir Singh
-console.log(user.getFullName?.()) //output: undefined (if function is not present)
+console.log(user.getFullName?.()) //output: undefined (if function is not present)  
