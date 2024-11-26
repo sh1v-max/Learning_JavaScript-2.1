@@ -8,7 +8,7 @@
 try{
   console.log(a)
 }catch(err){
-  console.log(err) // output: ReferenceError: a is not defined at script.js:9:15 
+  console.dir(err) // output: ReferenceError: a is not defined at script.js:9:15 
   //! this "err" is an object and not a string
 }
 
