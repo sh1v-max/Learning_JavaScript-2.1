@@ -1,3 +1,11 @@
+//Optional chaining is a new feature in javascript, which 
+//allows you to access deeply nested object properties 
+//without worrying if the property exists or not. It is a 
+//way to simplify the process of accessing nested object 
+//properties. It is a way to prevent errors when accessing 
+//properties of an object that may not exist.
+//& returns undefined if the property does not exist
+
 const user = {
   firstName: 'Wazir',
   lastName: 'Singh',
