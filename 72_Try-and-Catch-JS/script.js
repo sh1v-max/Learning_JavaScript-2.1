@@ -29,4 +29,7 @@ try{
   console.log(user.address.city) 
 }catch(err){
   console.dir(err) 
+  // error will be logged in the console
+  console.dir(err.name) // return the type of the error (reference error/type error etc)
+  console.dir(err.message) // return error message (cannot read property of undefined)
 }
