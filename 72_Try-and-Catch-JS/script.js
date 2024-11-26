@@ -8,7 +8,8 @@
 try{
   console.log(a)
 }catch(err){
-  console.log('error') // output: error //! this "error" is an object and not a string
+  console.log(err) // output: ReferenceError: a is not defined at script.js:9:15 
+  //! this "err" is an object and not a string
 }
 
 console.log('hello') // output: hello
