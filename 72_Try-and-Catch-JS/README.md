@@ -10,7 +10,6 @@ In JavaScript, error handling is an essential part of writing reliable and robus
 5. [Throwing Errors](#throwing-errors)
 6. [Custom Error Handling](#custom-error-handling)
 
----
 
 ## 1. Basic Usage
 
