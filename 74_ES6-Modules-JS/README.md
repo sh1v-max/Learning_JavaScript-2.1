@@ -176,3 +176,7 @@ Dynamic imports are useful for:
 | **Dynamic Import**   | `import('module')`       | `const mod = await import('./module.js');`    |
 
 By using `import` and `export`, you can write modular, reusable, and maintainable JavaScript code that scales well with larger applications.
+
+## Reference
+If you want to know more about Export/Import in JS, visit:
+- [YouTube](https://www.youtube.com/watch?v=58_rdS5EVxU&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=126)
