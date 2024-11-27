@@ -17,7 +17,6 @@ The `import` and `export` keywords in JavaScript are part of the **ES6 module sy
 4. [Dynamic Imports](#dynamic-imports)
 5. [Best Practices](#best-practices)
 
-
 ## 1. What are Modules?
 
 Modules are self-contained files in JavaScript that encapsulate code and allow it to be shared between files using `import` and `export`. Each module can contain:
