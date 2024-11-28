@@ -181,3 +181,5 @@ By using `import` and `export`, you can write modular, reusable, and maintainabl
 If you want to know more about Export/Import in JS, visit:
 - [FreeCodeCamp](https://www.freecodecamp.org/news/javascript-modules/)
 - [YouTube](https://www.youtube.com/watch?v=58_rdS5EVxU&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=126)
+- [YouTube (what is type="module")](https://youtu.be/58_rdS5EVxU?list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&t=2615)
+- [YouTube (how does import work)](https://youtu.be/58_rdS5EVxU?list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&t=2615)

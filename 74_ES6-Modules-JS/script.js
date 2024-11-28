@@ -1,3 +1,5 @@
+//! type="module" automatically makes you script run after the html is loaded (same as in case of defer)
+0
 //^ we need to use type="module" for using import and export
 
 // const usersData = [
