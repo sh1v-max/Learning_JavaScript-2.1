@@ -1862,8 +1862,14 @@ const usersData = [
   },
 ]
 
-//! we can use export while defining the variable
+//! we can use export while defining the variable, wont work with export default
 export const myName = "wazir"
+
+//works with function as well
+export default function getFirstUser(){
+  return usersData[0]
+}
+
 
 //& this is called named export
 // export { usersData, myName as myNames } //myName will be exprted and myNamese
@@ -1873,6 +1879,7 @@ export const myName = "wazir"
 // export default usersData
 
 //& using both export
-export default usersData
+export {usersData}
 // export { myName } //myName will be exprted and myNamese
 //! we dont need to write export (named) at the end, we could just use it while declaring the variable to use for
+//! you can use export default only once in a file, but you can use export multiple times

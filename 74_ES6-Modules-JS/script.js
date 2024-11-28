@@ -2439,12 +2439,15 @@
 //   },
 // ]
 
+//======================================================================================================
 
 // import { usersData, myName } from "./usersData.js"; //as we have exported myName as myNames so we're gonna use myNames and not myName
 // import { usersData, myName as myNames } from "./usersData.js"; // we can import with different name using "as"
 //^ we usually reanme a variable if we already have another same names variable already present in out file
 // before using import, you need t add type="module" in script tag in html file
 // const myName = "hello"
+
+//==================================================================================================================
 
 // import  {productsData}  from "./productsData.js";
 import  productsData  from "./productsData.js"; // we dont use curly brackets when importing any variable whcih is exported as default export
@@ -2455,10 +2458,23 @@ import  productsData  from "./productsData.js"; // we dont use curly brackets wh
 // import { myName } from "./usersData.js";
 //^ can also be written as
 
-import usersData, {myName} from "./usersData.js";
+//================================================================================================
+
+import getFirstUser, {myName, usersData } from "./usersData.js";
 // userData is default exported and myName is named exported
 
 console.log('users Data:', usersData);
 console.log('products data:',productsData);
 // console.log('products data:',abc);
 console.log(myName);
+console.log(getFirstUser());
+
+//===================================================================================================
+
+//~ import * as something from "./usersData.js"; // export everything at a time and keep then inside an object named "module"
+
+// console.log(something) // it will return a module object which will have all the exported variables and functiions
+// console.log(something.myName);
+// console.log(something.usersData);
+// console.log(something.default()); // default will contain the default exported functioon or variable
+
