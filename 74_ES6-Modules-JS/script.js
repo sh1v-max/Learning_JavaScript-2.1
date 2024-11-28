@@ -2438,3 +2438,27 @@
 //     ],
 //   },
 // ]
+
+
+// import { usersData, myName } from "./usersData.js"; //as we have exported myName as myNames so we're gonna use myNames and not myName
+// import { usersData, myName as myNames } from "./usersData.js"; // we can import with different name using "as"
+//^ we usually reanme a variable if we already have another same names variable already present in out file
+// before using import, you need t add type="module" in script tag in html file
+// const myName = "hello"
+
+// import  {productsData}  from "./productsData.js";
+import  productsData  from "./productsData.js"; // we dont use curly brackets when importing any variable whcih is exported as default export
+// import usersData, { myName } from "./usersData";
+// import  abc  from "./productsData.js"; // we can use any name while importing the variable which is exported as default export
+
+// import usersData from "./usersData.js";
+// import { myName } from "./usersData.js";
+//^ can also be written as
+
+import usersData, {myName} from "./usersData.js";
+// userData is default exported and myName is named exported
+
+console.log('users Data:', usersData);
+console.log('products data:',productsData);
+// console.log('products data:',abc);
+console.log(myName);

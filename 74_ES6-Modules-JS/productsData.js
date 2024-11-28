@@ -576,3 +576,9 @@ const productsData = [
     ],
   },
 ]
+
+//& this is called named export
+// export { productsData }
+
+//& this is called default export
+export default productsData

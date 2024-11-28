@@ -1861,3 +1861,18 @@ const usersData = [
       'Mozilla/5.0 (X11; Linux i686) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.66 Safari/535.11',
   },
 ]
+
+//! we can use export while defining the variable
+export const myName = "wazir"
+
+//& this is called named export
+// export { usersData, myName as myNames } //myName will be exprted and myNamese
+// export { usersData, myName }
+
+//& this is called default export
+// export default usersData
+
+//& using both export
+export default usersData
+// export { myName } //myName will be exprted and myNamese
+//! we dont need to write export (named) at the end, we could just use it while declaring the variable to use for
