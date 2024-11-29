@@ -57,3 +57,13 @@ function createUser(firstName, lastName, age) {
 }
 
 const user1 = createUser('Anurag', 'Singh', 25)
+const user2 = createUser('Wazir', 'Singh', 23)
+// user1.getBirthYear === user2.getBirthYear
+// output: false 
+// both function are same but being stored differently in the memory, its returning false
+//! to solve this, we use constructor function
+
+arr1 = [1,2]
+arr2 = [3,4]
+// arr1.pop === arr2.pop
+// output: true
