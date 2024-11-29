@@ -582,3 +582,4 @@ const productsData = [
 
 //& this is called default export
 export default productsData
+

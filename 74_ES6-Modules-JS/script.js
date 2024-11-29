@@ -1,4 +1,4 @@
-//! type="module" automatically makes you script run after the html is loaded (same as in case of defer)
+//! type="module" automatically makes you script run after the html is loaded (same as in case of)
 0
 //^ we need to use type="module" for using import and export
 
@@ -2479,4 +2479,5 @@ console.log(getFirstUser());
 // console.log(something.myName);
 // console.log(something.usersData);
 // console.log(something.default()); // default will contain the default exported functioon or variable
+
 
