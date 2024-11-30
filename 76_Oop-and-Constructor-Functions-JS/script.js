@@ -1,3 +1,7 @@
+//^ why need to use constructor function...
+// in the above example, whenever we were creating a new user, we were creating a new object and individual function each time... which consumes our memory
+// to prevent that, we will be using constructor function.
+
 function createUser(firstName, lastName, age) {
   const user = {
     firstName,
