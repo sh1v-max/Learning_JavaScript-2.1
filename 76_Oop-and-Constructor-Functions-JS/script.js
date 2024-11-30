@@ -20,8 +20,3 @@ const user2 = createUser('Anurag', 'Singh', 72)
 
 const arr1 = [1,2]
 const arr2 = [3, 4]
-
-function createUser(firstName, lastName){
-  this.firstName = firstName
-}
-
