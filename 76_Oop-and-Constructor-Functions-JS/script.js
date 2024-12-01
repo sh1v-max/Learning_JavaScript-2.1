@@ -20,5 +20,5 @@ const user2 = createUser('Anurag', 'Singh', 72)
 const arr1 = [1,2]
 const arr2 = [3, 4]
 
-console.log(user1.getAgeYear())
+console.log(user1.getAgeYear)
 
