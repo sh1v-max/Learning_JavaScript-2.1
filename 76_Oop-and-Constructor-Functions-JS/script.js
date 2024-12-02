@@ -2,12 +2,17 @@
 // in the previous example, whenever we were creating a new user, we were creating a new object and individual function each time... which consumes our memory
 // to prevent that, we will be using constructor function.
 
+function getBirthYear() {
+  return new Date().getFullYear() - this.age
+}
+// we're creating a function for only one time and giving its reference whenever is required
+
 function createUser(firstName, lastName, age) {
   const user = {
     firstName,
     lastName,
     age,
-    getAgeYear () {
+    getBirthYear () {
       return new Date().getFullYear() - user.age
     },
   }
