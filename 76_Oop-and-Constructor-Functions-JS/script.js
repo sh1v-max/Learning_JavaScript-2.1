@@ -11,6 +11,7 @@ function createUser(firstName, lastName, age) {
   const user = {
     firstName,
     lastName,
+    
     age,
     getBirthYear () {
       return new Date().getFullYear() - user.age
