@@ -19,6 +19,7 @@ function createUser(firstName, lastName, age) {
   return user
 }
 
+
 const user1 = createUser('Aman', 'Mishra', 32)
 const user2 = createUser('Anurag', 'Singh', 72)
 
