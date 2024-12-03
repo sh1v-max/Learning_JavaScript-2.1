@@ -10,30 +10,65 @@
 // but we can access this function outside of the object, which pollutes global environment
 // as, its intended to be used inside object only 
 
+//~ function createUser(firstName, lastName, age) {
+//   const user = {
+//     firstName,
+//     lastName,
+//     age,
+    // getBirthYear: createUser.commonMethods.getBirthYear
+//   }
+//   return user
+// }
+
+//^ same function can be written using this keyword
 function createUser(firstName, lastName, age) {
-  const user = {
-    firstName,
-    lastName,
-    age,
-    getBirthYear: createUser.commonMethods.getBirthYear
-  }
-  return user
+  this.firstName = firstName
 }
+// now we can call the function with new keyword
+// new createUser('Aman')
+// createUser {firstName: "Aman"}
+//! and when we call a function using new keyword, it's constructor function
+
+
+
+//~ function sayHi() {
+//   console.log('Hello')
+// }
+// sayHi() // Hello
+//sayHi.prototype.constructor() // Hello
+
+//^ with new keyword
+function sayHi2() {
+  console.log('Hello')
+  console.log(this)
+}
+//~ sayHi2() // Hello and 
+// this will return window object
+// Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+//~ new sayHi2() // Hello and
+// this will return sayHi2 object
+// sayHi2 {}
+//! so using new keyword, when we call a function, it creates an object of that function and returns it
+// it doesn't return anything from the function, but the object of that function
+
+
+// new sayHi(), will return
+// Hello and
+// sayHi {}
+//  [[Prototype]]: Object
 
 // as we know, createUser function is an object, so we can add properties to it
 // createUser.hello = 'hello'
 //crateUser.hello will give us 'hello'
 // createUser.commonMethods = {} // empty object
 
-createUser.commonMethods = {
-  getBirthYear() {
-    return new Date().getFullYear() - this.age
-  }
-}
+// ~ createUser.commonMethods = {
+//   getBirthYear() {
+//     return new Date().getFullYear() - this.age
+//   }
+// }
 // createUser.commonMethods // {getBirthYear: ƒ}
 
-const user1 = createUser('Aman', 'Mishra', 32)
-const user2 = createUser('Anurag', 'Singh', 72)
+// const user1 = createUser('Aman', 'Mishra', 32)
+// const user2 = createUser('Anurag', 'Singh', 72)
 
-const arr1 = [1,2]
-const arr2 = [3, 4]
