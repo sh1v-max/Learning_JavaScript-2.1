@@ -94,7 +94,7 @@ createUser.prototype.getBirthYear = function() {
   return new Date().getFullYear() - this.age
 }
 
-// const user1 = new createUser('Aman', 'Mishra', 32)
-// const user2 = new createUser('Anurag', 'Singh', 72)
+const user1 = new createUser('Aman', 'Mishra', 32)
+const user2 = new createUser('Anurag', 'Singh', 72)
 
 //while creating construction function, we capitalize the first letter of the function name
