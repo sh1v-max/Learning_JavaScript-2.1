@@ -21,14 +21,18 @@
 // }
 
 //^ same function can be written using this keyword
-function createUser(firstName, lastName, age) {
-  this.firstName = firstName
-}
+//~ function createUser(firstName, lastName, age) {
+//   this.firstName = firstName
+//   this.lastName = lastName
+//   this.age = age
+// }
 // now we can call the function with new keyword
 // new createUser('Aman')
 // createUser {firstName: "Aman"}
 //! and when we call a function using new keyword, it's constructor function
 
+//we are not returning anything from the function, but we are creating an object of that function
+//so we will be using new, it will automatically return, and then this will workd as intended
 
 
 //~ function sayHi() {
@@ -38,13 +42,15 @@ function createUser(firstName, lastName, age) {
 //sayHi.prototype.constructor() // Hello
 
 //^ with new keyword
-function sayHi2() {
-  console.log('Hello')
-  console.log(this)
-}
+//~ function sayHi2() {
+//   console.log('Hello')
+//   console.log(this)
+// }
+
 //~ sayHi2() // Hello and 
 // this will return window object
 // Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+
 //~ new sayHi2() // Hello and
 // this will return sayHi2 object
 // sayHi2 {}
@@ -72,3 +78,25 @@ function sayHi2() {
 // const user1 = createUser('Aman', 'Mishra', 32)
 // const user2 = createUser('Anurag', 'Singh', 72)
 
+// const user1 = new createUser('Aman', 'Mishra', 32)
+// const user2 = new createUser('Anurag', 'Singh', 72)
+//user1 // createUser {firstName: "Aman", lastName: "Mishra", age: 32}
+//user2 // createUser {firstName: "Anurag", lastName: "Singh", age: 72}
+
+
+function createUser(firstName, lastName, age) {
+  this.firstName = firstName
+  this.lastName = lastName
+  this.age = age
+}
+
+createUser.prototype.getBirthYear = function() {
+  return new Date().getFullYear() - this.age
+}
+
+// const user1 = new createUser('Aman', 'Mishra', 32)
+// const user2 = new createUser('Anurag', 'Singh', 72)
+
+//while creating construction function, we capitalize the first letter of the function name
+const user1 = new createUser('Aman', 'Mishra', 32)
+const user2 = new createUser('Anurag', 'Singh', 72)
