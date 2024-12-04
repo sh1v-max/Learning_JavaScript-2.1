@@ -84,19 +84,31 @@
 //user2 // createUser {firstName: "Anurag", lastName: "Singh", age: 72}
 
 
-function createUser(firstName, lastName, age) {
+function CreateUser(firstName, lastName, age) {
   this.firstName = firstName
   this.lastName = lastName
   this.age = age
 }
 
-createUser.prototype.getBirthYear = function() {
+CreateUser.prototype.getBirthYear = function() {
   return new Date().getFullYear() - this.age
+}
+
+CreateUser.prototype.getFullName = function(){
+  return this.firstName + ' ' + this.lastName
 }
 
 // const user1 = new createUser('Aman', 'Mishra', 32)
 // const user2 = new createUser('Anurag', 'Singh', 72)
 
 //while creating construction function, we capitalize the first letter of the function name
-const user1 = new createUser('Aman', 'Mishra', 32)
-const user2 = new createUser('Anurag', 'Singh', 72)
+const user1 = new CreateUser('Aman', 'Mishra', 32)
+const user2 = new CreateUser('Anurag', 'Singh', 72)
+
+//& calling constructor function using new keyword, it automatically creates and return(due to new keyword) an object of that function and returns it
+//& and then this keyword will point to the object created by the constructor function
+//& and we are creating firstName, lastName, age properties on that object, and storing the values
+
+//! what is the issue here?
+// we are creating the function(main), and then we are adding its property separately 
+// and to solve that, we will learn and use classes
