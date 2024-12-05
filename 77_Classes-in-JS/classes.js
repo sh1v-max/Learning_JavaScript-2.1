@@ -1,9 +1,10 @@
 function userExample(){}
 //remove parenthesis and function keyword and add class keyword
 
-class CreateUser {
+//~ class CreateUser {
 
-}
+// }
+
 // CreateUser will return:
 // class CreateUser {
 //
@@ -15,3 +16,15 @@ class CreateUser {
 // it would give an error saying, cannot be invoked without 'new'
 // new CreateUser() will return an object with the properties defined in the constructor
 // output: CreateUser {}
+
+class CreateUser {
+
+}
+
+CreateUser.prototype.getBirthYear = function() {
+  return new Date().getFullYear() - this.age
+}
+
+CreateUser.prototype.getFullName = function() {
+  return this.firstName + ' ' + this.lastName
+}
