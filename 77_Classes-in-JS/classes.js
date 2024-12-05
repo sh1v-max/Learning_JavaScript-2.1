@@ -33,15 +33,23 @@ function userExample(){}
 //^ we can write the prototype methods inside the class
 
 class CreateUser {
-  constructor(a, b, c){
-    console.log(this)
-    console.log(a, b, c)
+  constructor(firstName, lastName, age){
+    // console.log(this) // it will print the object
+    // console.log(a, b, c)
     // class with print this, as being called using new keyword
+    this.firstName = firstName
+    this.lastName = lastName
+    this.age = age
+    // it will create properties with firstName, lastName and age
+    // and will store the corresponding values
   }
+  //& this is constructor method and is different from constructor function
+  //& and it will automatically get run
   // console.log("hello") // it wont get printer, and will return
   getBirthYear() {
     return new Date().getFullYear() - this.age
     // console.log("hello") // it wont get printer either, and will return
+    // this will be called when we call getBirthYear method
   }
 
   getFullName() {
@@ -57,3 +65,7 @@ class CreateUser {
 const user1 = new CreateUser('Aman', 'Mishra', 32)
 const user2 = new CreateUser('Anurag', 'Singh', 72)
 // this automatically goes to constructor function
+console.log(user1)
+console.log(user2)
+
+
