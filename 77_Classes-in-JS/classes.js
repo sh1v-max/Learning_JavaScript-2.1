@@ -28,3 +28,5 @@ CreateUser.prototype.getBirthYear = function() {
 CreateUser.prototype.getFullName = function() {
   return this.firstName + ' ' + this.lastName
 }
+
+// it will add two properties in prototype object
