@@ -11,6 +11,7 @@ class CreateUser {
   getFullName() {
     return this.firstName + ' ' + this.lastName
   }
+  // we can use this property outside the class also
 }
 
 const user1 = new CreateUser('Aman', 'Mishra', 32)
