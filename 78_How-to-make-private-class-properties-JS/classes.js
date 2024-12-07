@@ -3,19 +3,22 @@ class CreateUser {
   constructor(firstName, lastName, age) {
     this.firstName = firstName
     this.lastName = lastName
-    // this._age = age 
+    //^ this._age = age 
     // using underscore was a convention to tell other developers that
     // this property is private and should not be accessed directly
     // but it is not a full proof way to make a property private
     // it doesn't change anything
     this.#age = age
-    // this is a new way to make a property private
+    //^ this is a new way to make a property private
     // by using # before the property name
     // but we need to declare #age outside the constructor
     // to make it private or else, it will give an error
   }
 
+  #hi = 'Hello World'
+  
   getBirthYear() {
+    console.log(this.#hi)
     return new Date().getFullYear() - this.#age
     // can access #age inside the class
   }
