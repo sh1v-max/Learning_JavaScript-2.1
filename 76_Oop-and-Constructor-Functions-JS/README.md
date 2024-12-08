@@ -197,3 +197,10 @@ Object-Oriented Programming (OOP) in JavaScript follows four key principles that
 4. **Polymorphism**: Allows methods in different classes to have the same name but different implementations.
 
 By applying these principles, JavaScript developers can create more modular, maintainable, and reusable code, making it easier to manage and extend software applications.
+
+## Reference 
+If you want to know more about OOPs in JS, visit:
+
+- [FreeCodeCamp](https://www.freecodecamp.org/news/object-oriented-programming-javascript/)
+- [YouTube](https://www.youtube.com/watch?v=FH_6ww5b52k&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=128&pp=iAQB)
+
