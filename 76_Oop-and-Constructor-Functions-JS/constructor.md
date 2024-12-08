@@ -118,3 +118,9 @@ console.log(person2.age);  // Output: 25
 - **ES6 `class` syntax** provides a cleaner, modern way of defining constructors and methods.
 
 Constructor functions are a key part of object-oriented programming in JavaScript, enabling the creation of reusable and modular objects.
+
+
+## Other related topics
+- [this](./this.md) keyword
+- [new](./new.md) keyword
+- [constructor](./constructor.md) keyword

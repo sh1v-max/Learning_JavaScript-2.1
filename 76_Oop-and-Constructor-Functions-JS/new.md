@@ -198,3 +198,9 @@ The new object inherits methods from the constructor's `prototype`.
 ## **Conclusion**
 
 The `new` keyword is a fundamental part of JavaScript's object-oriented programming. It allows developers to create instances of objects and enables inheritance through the prototype chain. By understanding how `new` works, you can use it effectively and avoid common pitfalls in your code.
+
+
+## Other related topics
+- [this](./this.md) keyword
+- [new](./new.md) keyword
+- [constructor](./constructor.md) keyword

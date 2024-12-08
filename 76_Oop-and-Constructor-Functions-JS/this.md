@@ -222,3 +222,9 @@ console.log(myCar.brand); // "Toyota"
 1. Use arrow functions when you need to preserve the parent `this`.
 2. Use `bind` or `call` to explicitly set `this` if necessary.
 3. Avoid relying on `this` in the global scope.
+
+
+## Other related topics
+- [this](./this.md) keyword
+- [new](./new.md) keyword
+- [constructor](./constructor.md) keyword
