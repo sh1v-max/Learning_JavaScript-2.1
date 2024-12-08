@@ -121,6 +121,6 @@ Constructor functions are a key part of object-oriented programming in JavaScrip
 
 
 ## Other related topics
-- [this](./this.md) keyword
 - [new](./new.md) keyword
+- [this](./this.md) keyword
 - [constructor](./constructor.md) keyword

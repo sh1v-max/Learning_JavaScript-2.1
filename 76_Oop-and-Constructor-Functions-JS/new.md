@@ -201,6 +201,6 @@ The `new` keyword is a fundamental part of JavaScript's object-oriented programm
 
 
 ## Other related topics
-- [this](./this.md) keyword
 - [new](./new.md) keyword
+- [this](./this.md) keyword
 - [constructor](./constructor.md) keyword

@@ -205,6 +205,6 @@ If you want to know more about OOPs in JS, visit:
 - [YouTube](https://www.youtube.com/watch?v=FH_6ww5b52k&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=128&pp=iAQB)
 
 ## Other related topics
-- [this](./this.md) keyword
 - [new](./new.md) keyword
+- [this](./this.md) keyword
 - [constructor](./constructor.md) keyword

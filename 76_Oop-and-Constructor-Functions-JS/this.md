@@ -225,6 +225,6 @@ console.log(myCar.brand); // "Toyota"
 
 
 ## Other related topics
-- [this](./this.md) keyword
 - [new](./new.md) keyword
+- [this](./this.md) keyword
 - [constructor](./constructor.md) keyword
