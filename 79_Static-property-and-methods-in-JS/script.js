@@ -8,6 +8,9 @@ class CreateUser {
   static hi = 'Hii'
   // static property/method is a method that is called on the class itself, not on the object instance
 
+  static {
+    console.log('I am static block')
+  }
   
   getBirthYear(){
     return new Date().getFullYear() - this.age
