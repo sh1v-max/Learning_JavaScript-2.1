@@ -9,8 +9,13 @@ class CreateUser {
   // static property/method is a method that is called on the class itself, not on the object instance
 
   static {
+    const z = 10
+    const str = 'hello'
     console.log('I am static block')
   }
+  // this is static block
+  // it will be executed only once when the class is loaded
+  // it can not be called from object instance or outside object
   
   getBirthYear(){
     return new Date().getFullYear() - this.age
