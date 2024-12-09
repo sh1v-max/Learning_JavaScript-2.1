@@ -6,6 +6,7 @@ class CreateUser {
   }
   hello = 'hello'
   static hi = 'Hii'
+  // static property creates a property on the class itself
   // static property/method is a method that is called on the class itself, not on the object instance
 
   static {
