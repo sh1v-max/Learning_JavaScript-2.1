@@ -4,12 +4,17 @@ class CreateUser {
     this.lastName = lastName
     this.age = age
   }
-  
-  static hi = 'Hello'
+  hello = 'hello'
+  static hi = 'Hii'
+  // static property/method is a method that is called on the class itself, not on the object instance
 
+  
   getBirthYear(){
     return new Date().getFullYear() - this.age
   }
+  // static getFullName(){
+  //   return this.firstName + ' ' + this.lastName
+  // }
   getFullName(){
     return this.firstName + ' ' + this.lastName
   }
