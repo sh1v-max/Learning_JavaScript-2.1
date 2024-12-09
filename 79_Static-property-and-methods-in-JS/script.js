@@ -12,6 +12,12 @@ class CreateUser {
     const z = 10
     const str = 'hello'
     console.log('I am static block')
+    this.greet = 'good morning' // this will be added to the class as a property
+    this .getFullName = function(){
+      return this.firstName + ' ' + this.lastName
+    }
+    console.log(this)
+    // this keyword, here, is pointing to the class 
   }
   // this is static block
   // it will be executed only once when the class is loaded
