@@ -209,3 +209,9 @@ console.log(rect.area); // Output: 200
 
 3. **Debugging**:
    - Use descriptive names and meaningful error messages in setters to simplify debugging.
+
+
+## Reference
+To know more about getter and setter in JavaScript, visit:
+- []()
+- [YouTube](https://www.youtube.com/watch?v=IhGRluP0UDQ&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=134)
