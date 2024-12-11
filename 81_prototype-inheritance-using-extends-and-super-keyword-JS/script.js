@@ -138,3 +138,8 @@ console.log(employee.work())
 
 //^ what does super keyword does?
 // super keyword is used to call the constructor of the parent class
+
+//! the image "prototypeChain" shows how the prototype chain works and formed using "extend" keyword
+// to see prototypeChain in action, write "HTMLHeadingElement" and extend all the "prototype"
+// and it will end to OBJECT as its final prototype
+// as everything in JavaScript s OBJECT
