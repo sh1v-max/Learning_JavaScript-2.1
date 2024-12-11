@@ -124,3 +124,7 @@ const student1 = new Student('Aman', 'Mishra', 32, 10)
 const employee = new Employee('Aman', 'Mishra', 32, 'google')
 
 //^ using constructor require "super" keyword
+console.log(employee.work())
+// output: working...
+// as there are two "work", one in User class and other in Employee class
+// it will return the nearest one in the prototype chain, which is in Employee class
