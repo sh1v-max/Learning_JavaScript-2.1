@@ -99,6 +99,7 @@ class Student  extends User{
     super(firstName, lastName, age, standard)
     // super keyword needs to pass the properties of the parent class
     // or it will return undefined value for all
+    // we have to pass the properties in constructor and in super keyword as well
   }
   study (){
     console.log('studying...')
