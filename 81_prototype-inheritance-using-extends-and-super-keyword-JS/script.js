@@ -106,7 +106,17 @@ class Student  extends User{
   }// can add more methods to the Student class
 } // using extends keyword to inherit the properties of the User class
 
-class Employee {}
+class Employee extends User{
+  constructor(firstName, lastName, age, company) {
+    super(firstName, lastName, age)
+    this.company = company
+  }
+  work(){
+    console.log('working...')
+  }
+}
 
 const student1 = new Student('Aman', 'Mishra', 32, 10)
 const employee = new Employee('Aman', 'Mishra', 32, 'google')
+
+//^ using constructor require "super" keyword
