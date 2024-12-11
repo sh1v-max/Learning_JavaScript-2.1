@@ -70,8 +70,15 @@
 //^ in the above code we are repeating the same code again and again for the different classes
 //^ so we can use extends keyword to inherit the properties of the other class
 
-class User {
+//================================================================================
+class Person {
+  live (){
+    console.log('person is living')
+  }
+}
+class User extends Person{
   constructor(firstName, lastName, age) {
+    super()
     this.firstName = firstName
     this.lastName = lastName
     this.age = age
@@ -128,3 +135,6 @@ console.log(employee.work())
 // output: working...
 // as there are two "work", one in User class and other in Employee class
 // it will return the nearest one in the prototype chain, which is in Employee class
+
+//^ what does super keyword does?
+// super keyword is used to call the constructor of the parent class
