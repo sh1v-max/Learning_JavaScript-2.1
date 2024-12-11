@@ -143,3 +143,5 @@ console.log(employee.work())
 // to see prototypeChain in action, write "HTMLHeadingElement" and extend all the "prototype"
 // and it will end to OBJECT as its final prototype
 // as everything in JavaScript s OBJECT
+
+
