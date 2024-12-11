@@ -92,7 +92,18 @@ class User {
   }
 }
 
-class Student {} 
+class Student  extends User{
+  //^ adding property is different that usual
+  constructor(firstName, lastName, age, standard) {
+    //& super keyword is used to call the constructor of the parent class
+    super(firstName, lastName, age, standard)
+    // super keyword needs to pass the properties of the parent class
+    // or it will return undefined value for all
+  }
+  study (){
+    console.log('studying...')
+  }// can add more methods to the Student class
+} // using extends keyword to inherit the properties of the User class
 
 class Employee {}
 
