@@ -90,6 +90,10 @@ class User {
     this.firstName = firstName
     this.lastName = lastName
   }
+
+  work (){
+    console.log('user is working')
+  }
 }
 
 class Student  extends User{
