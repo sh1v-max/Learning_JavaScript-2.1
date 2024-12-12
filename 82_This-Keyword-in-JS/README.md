@@ -1,7 +1,3 @@
-Here’s a detailed explanation of the `this` keyword in JavaScript in `README.md` format:
-
----
-
 # The `this` Keyword in JavaScript
 
 The `this` keyword is one of the most important and powerful features of JavaScript. It refers to the **current execution context** — meaning, it refers to the object or entity that is currently executing the code. Its value depends on how and where it is used, which makes understanding it crucial for writing accurate and efficient JavaScript code.
@@ -15,7 +11,7 @@ The `this` keyword is one of the most important and powerful features of JavaScr
 6. [Binding `this` with `call`, `apply`, and `bind`](#binding-this-with-call-apply-and-bind)
 7. [Summary](#summary)
 
----
+
 
 ## What is `this`?
 
@@ -28,7 +24,6 @@ In JavaScript, **`this`** is a special keyword that refers to the **current cont
 - **In Event Handlers**: Refers to the DOM element that triggered the event.
 - **In Arrow Functions**: Does not have its own `this`; instead, it inherits `this` from its surrounding context (lexical scoping).
 
----
 
 ## Understanding the Value of `this`
 
@@ -87,7 +82,6 @@ button.addEventListener("click", function() {
 
 In this case, `this` refers to the `button` element that triggered the click event.
 
----
 
 ## How `this` Works in Different Contexts
 
@@ -133,7 +127,6 @@ person.greet();  // Output: John
 
 In this case, the arrow function inside `setTimeout` inherits the `this` value from the `greet` method, which refers to the `person` object.
 
----
 
 ## Binding `this` with `call`, `apply`, and `bind`
 
@@ -176,7 +169,6 @@ const boundGreet = greet.bind(person);
 boundGreet();  // Output: Hello, Alice
 ```
 
----
 
 ## Summary
 
@@ -188,3 +180,6 @@ boundGreet();  // Output: Hello, Alice
 - **In Arrow Functions**: `this` does not have its own value; it is inherited from the surrounding lexical context.
 - You can control the value of `this` using `call()`, `apply()`, and `bind()`.
 
+## Reference
+If you want to know more about This keyword in JavaScript, visit:
+- [YouTube](https://www.youtube.com/watch?v=GP4PQrATtR0&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=136)
