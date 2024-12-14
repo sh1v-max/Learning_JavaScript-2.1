@@ -24,7 +24,7 @@ console.log("month:", myDate.getMonth()) // 2024
 console.log("week day:", myDate.getDay()) // 6 // 0 is sunday
 console.log("hours:", myDate.getHours()) // 16
 console.log("minutes:", myDate.getMinutes()) // 16
-console.log("seconds:", myDate.getSeconds()) // 45
+console.log("seconds:", myDate.getSeconds())// 45
 console.log("milliseconds:", myDate.getMilliseconds()) // 672 
 console.log("time zone offset:", myDate.getTimezoneOffset()) // -330
 // -ve indicates that local time is ahead of UTCz
