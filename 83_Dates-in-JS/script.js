@@ -1,5 +1,6 @@
 Date()
 // 'Sat Dec 14 2024 13:25:29 GMT+0530 (India Standard Time)' (string)
+const isoDate = '2024-12-14T13:13:44.925Z'
 const myDate = new Date()
 // Sat Dec 14 2024 13:25:29 GMT+0530 (India Standard Time) (object)
 console.log(myDate)
@@ -27,3 +28,4 @@ console.log("seconds:", myDate.getSeconds()) // 45
 console.log("milliseconds:", myDate.getMilliseconds()) // 672 
 console.log("time zone offset:", myDate.getTimezoneOffset()) // -330
 // -ve indicates that local time is ahead of UTCz
+console.log("JSON:", myDate.toJSON()) // -330
