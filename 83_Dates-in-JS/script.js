@@ -11,5 +11,16 @@ console.log("date and time: " + myDate.toLocaleString('en-GB')) // 14/12/2024, 1
 // now time has changed into 24 hours format
 console.log("date and time: " + myDate.toLocaleString('en-GB', {hour12: true })) // 14/12/2024, 14:39:01 
 // hour format has changed to 12 hour format
-console.log("date: " + myDate.toLocaleDateString('en-GB', {hour12: true })) // 14/12/2024
+console.log("date: " + myDate.toLocaleDateString('en-GB')) // 14/12/2024
 // only date
+console.log("day: " + myDate.getDate()) // 14
+console.log("month: " + myDate.getMonth()) // 11 
+// month starts from 
+console.log("year: " + myDate.getFullYear()) // 2024 
+console.log("UTC year: " + myDate.getUTCFullYear()) // 2024 
+console.log("month: " + myDate.getMonth()) // 2024 
+console.log("week day: " + myDate.getDay()) // 6 // 0 is sunday
+console.log("hours: " + myDate.getHours()) // 16
+console.log("minutes: " + myDate.getMinutes()) // 16
+console.log("seconds: " + myDate.getSeconds()) // 45
+console.log("milliseconds: " + myDate.getMilliseconds()) // 672 
