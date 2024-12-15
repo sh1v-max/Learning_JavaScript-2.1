@@ -11,3 +11,4 @@ console.log(myDate.getTime()) // this will return te time stamp in milliseconds
 console.log(myDate.toLocaleString()) // 12/15/2024, 4:42:19 PM
 console.log(myDate.toLocaleDateString()) //12/15/2024
 console.log(myDate.getMinutes()) // 42
+console.log(myDate.toString()) // this will be a string representation of the date 
