@@ -213,3 +213,8 @@ The `Date` object is a powerful tool for working with dates and times in JavaScr
 - Extracting specific components like year, month, and day.
 - Performing date arithmetic.
 - Formatting and working with time zones.
+
+## Reference
+To get to know more about Dates in JavaScript, visit: 
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+- [YouTube](https://www.youtube.com/watch?v=m5KnQQ-VXmQ&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=148)
