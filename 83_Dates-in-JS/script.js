@@ -12,3 +12,6 @@ console.log(myDate.toLocaleString()) // 12/15/2024, 4:42:19 PM
 console.log(myDate.toLocaleDateString()) //12/15/2024
 console.log(myDate.getMinutes()) // 42
 console.log(myDate.toString()) // this will be a string representation of the date 
+
+//& simple way to return the current date and time
+console.log(Date.now()) //& this will return the current timestamp in milliseconds 

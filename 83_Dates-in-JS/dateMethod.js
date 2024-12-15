@@ -4,6 +4,7 @@ const isoDate = '2024-12-14T13:13:44.925Z'
 const myDate = new Date()
 // Sat Dec 14 2024 13:25:29 GMT+0530 (India Standard Time) (object)
 console.log(myDate)
+console.log(Date.now()) //& this will return the current timestamp in milliseconds 
 console.log('ISO format:', myDate.toISOString())
 // console.dir(myDate)
 // in the object formate
