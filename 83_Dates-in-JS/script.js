@@ -51,7 +51,11 @@ const user3Date = new Date('2000-04-02T12:00:00.300Z')
 console.log(user3Date.toLocaleString('en-GB'))
 console.log(user3Date.toLocaleDateString('en-GB'))
 
-const user4DOB = new Date(2000, 11, 12, 4, 30, 15)
-// Tue Dec 12 2000 04:30:15 GMT+0530 (India Standard Time)
+// const user4DOB = new Date(2000, 10, 12, 4, 30, 15)
+// const user4DOB = new Date(2000, 10, 12) // common
+const [day, month, year] = user1DOB.split('/').map((el) => +el) // to convert string into number
+const user4DOB = new Date(year, month - 1, day)
+// correct format is YYYY/MM/DD and month starts from 0
+// Sun Nov 12 2000 04:30:15 GMT+0530 (India Standard Time)
 //? https://youtu.be/m5KnQQ-VXmQ?list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&t=8475
 console.log(user4DOB)
