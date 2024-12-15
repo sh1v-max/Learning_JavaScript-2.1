@@ -29,3 +29,7 @@ console.log("milliseconds:", myDate.getMilliseconds()) // 672
 console.log("time zone offset:", myDate.getTimezoneOffset()) // -330
 // -ve indicates that local time is ahead of UTCz
 console.log("JSON:", myDate.toJSON()) // -330
+
+//^ UTC will show everything but for the UTC time, ie. england time
+console.log("UTC hours:", myDate.getUTCHours()) // 16
+console.log("UTC minutes:", myDate.getUTCMinutes()) // 16
