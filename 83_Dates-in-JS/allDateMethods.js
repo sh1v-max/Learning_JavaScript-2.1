@@ -39,7 +39,8 @@ console.log('toLocaleString: ', myDate.toLocaleString())
 console.log('toLocaleDateString: ', myDate.toLocaleDateString())
 console.log('toLocaleTimeString: ', myDate.toLocaleTimeString())
 
-// Local set methods
+//^ Local set methods
+// we can set the date and time individually using the set methods
 myDate.setFullYear(2014)
 myDate.setMonth(10)
 myDate.setDate(5)
