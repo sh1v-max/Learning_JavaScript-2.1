@@ -107,3 +107,6 @@ For more information about SetTimeout and SetInterval in JavaScript, visit:
 > - [YouTube (HOF with closure)](https://www.youtube.com/watch?v=w_-fVsa6qns&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=82)
 > - [YouTube (recommended)](https://www.youtube.com/watch?v=d4_hcQkGkfI)
 
+## Other related topics
+- [HOF](./HOF-2.md)
+- [Immediately invoked vs Returning function](./immediately-invoked-VS-returning-function.md)

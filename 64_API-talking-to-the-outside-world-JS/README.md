@@ -83,3 +83,7 @@ APIs in JavaScript open a wide range of possibilities, from interacting with web
 To know more about API in JavaScript, you can visit:
 
  - [YouTube](https://www.youtube.com/watch?v=wfFoCI6mtvc&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=116)
+
+ ## Other related topics
+- [JSON](./JSON.md)
+- [Fetch and XHR](./fetch&xhr.md)

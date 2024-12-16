@@ -136,7 +136,7 @@ Topics in detail:
 |22| [While Loop](./22_While-Loop-JS/README.md)|
 |23| [For Loop](./23-For-Loop-JS/README.md)|
 |24| [Do While Loop](./24_Do-While-Loop-JS/README.md)|
-|25| [Intro Functions](./25_Intro-Functions-JS/README.md) (need update)|
+|25| [Intro Functions](./25_Intro-Functions-JS/README.md)|
 |26| [Execution Context Function](./26-Execution-Context-Function-JS/README.md)|
 |27| [Hoisting](./27_Hoisting-JS/README.md)|
 |28| [Scope in JS](./28_Scope-in-JS/README.md)|
@@ -144,13 +144,13 @@ Topics in detail:
 |30| [High Order Function](./30_High-Order-Function-JS/README.md)|
 |31| [SetTimeout/SetInterval](./31_SetTimeOut-SetInterval-JS/README.md)|
 |32| [Event Loop and Callback Queue](./32_Event-Loop-and-Callback-Queue-JS/README.md)|
-|33| [Returning Function with Closure](./33_Returning-Function-With-Closure-JS/README.md) (need update)|
+|33| [Returning Function with Closure](./33_Returning-Function-With-Closure-JS/README.md)|
 |33.9| [Understanding Closure](./33.9_Understandig-Closure/README.md)|
 |34| [Function vs Methods](./34_Function-VS-Methods-JS/README.md)|
 |35| [Arrow Function](./35_Arrow-Function-JS/README.md)|
 |36| [For-in vs For-of Loop](./36_For-in-VS-For-of-Loop-JS/README.md)|
 |37| [ForEach Array Method](./37_ForEach-Array-method-JS/README.md)|
-|38| [Map in JS](./38_MAP-in-JS/README.md) (need update)|
+|38| [Map in JS](./38_MAP-in-JS/README.md)|
 |39| [Some and Every in JS](./39_Some-and-Every-in-JS/README.md)|
 |40| [Argument Object in JS](./40_Argument-Object-In-JS/README.md)|
 |41| [Default Parameters](./41_Default-Parameters-JS/README.md)|
@@ -158,7 +158,7 @@ Topics in detail:
 |43| [Rest Parameters](./43_Rest-Parameters-JS/README.md)|
 |44| [Destructuring in JS](./44_Destructuring-in-JS/README.md)|
 |45| [Browser Object Model (BOM)](./45_Browser-Object-Model-BOM-JS/README.md)|
-|46| [Document Object Model (DOM)](./46_Document-Object-Model-JS/Readme.md) (need update)|
+|46| [Document Object Model (DOM)](./46_Document-Object-Model-JS/Readme.md)|
 |47| [Selecting Elements in DOM](./47_Selecting-element-DOM-JS/Readme.md)|
 |48| [InnerText, InnerHTML, TextContent in DOM](./48_InnerText-InnerHTML-TextContent-DOM-JS/README.md)|
 |49| [getAttribute, setAttribute in DOM](./49_getAttribute-setAttribute-DOM-JS/README.md)|
@@ -176,8 +176,8 @@ Topics in detail:
 |61| [Event Bubbling and Capturing in DOM (Duplicate)](./60_Event-bubbling-and-Event-capturing-DOM-JS/README.md)|
 |62| [Event Delegation in DOM](./62_Event-Delegation-DOM-JS/README.md)|
 |63| [Local Storage in JS](./63_Local-Storage-JS/README.md)|
-|64| [API – Talking to the Outside World](./64_API-talking-to-the-outside-world-JS/README.md) (need update)|
-|65| [XMLHttpRequest in JS](./65_XMLHttpRequest-JS/README.md) (need update)|
+|64| [API – Talking to the Outside World](./64_API-talking-to-the-outside-world-JS/README.md)|
+|65| [XMLHttpRequest in JS](./65_XMLHttpRequest-JS/README.md)|
 |66| [Synchronous vs Asynchronous](./66_Synchronous-Vs-Asynchronous-JS/README.md)|
 |67| [Callback Hell in JS](./67_Callbakc-Hell-JS/README.md)|
 |68| [Promises in JS](./68-Promises-JS/README.md)|
@@ -186,9 +186,9 @@ Topics in detail:
 |71| [Async/Await in JS](./71_Async-Await-JS/README.md)|
 |72| [Try and Catch in JS](./72_Try-and-Catch-JS/README.md)|
 |73| [Optional Chaining in JS](./73_Optional-Chaining-JS/README.md)|
-|74| [ES6 Modules in JS](./74_ES6-Modules-JS/README.md) (need update)|
+|74| [ES6 Modules in JS](./74_ES6-Modules-JS/README.md)|
 |75| [OOP and Factory Function in JS](./75_Oop-and-factory-function-JS/README.md)|
-|76| [OOP and Constructor Functions in JS](./76_Oop-and-Constructor-Functions-JS/README.md) (need update)|
+|76| [OOP and Constructor Functions in JS](./76_Oop-and-Constructor-Functions-JS/README.md)|
 |77| [Classes in JS](./77_Classes-in-JS/README.md)|
 |78| [How to Make Private Class Properties in JS](./78_How-to-make-private-class-properties-JS/README.md)|
 |79| [Static Property and Methods in JS](./79_Static-property-and-methods-in-JS/README.md)|

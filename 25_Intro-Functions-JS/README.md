@@ -64,3 +64,7 @@ Functions in JavaScript allow for modular, reusable, and clean code, making them
 > - [W3School](https://www.w3schools.com/js/js_functions.asp?goalId=77926566-cd44-48e3-b935-2da139e4f98a)
 > - [YouTube](https://www.youtube.com/watch?v=htufr8nVeu4&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=69)
 > - [YouTube (return)](https://www.youtube.com/watch?v=hz9Zpv36jAM&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=70)
+
+## Other related topics
+- [More on function](./more-on-function.md)
+- [Declaration vs Expression](./declaration-vs-expression.md)

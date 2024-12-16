@@ -181,3 +181,8 @@ These three methods are powerful tools in JavaScript for working with arrays, an
 - [YouTube](https://www.youtube.com/watch?v=Kc3kSIpL6x8&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=84&pp=iAQB)
 - [YouTube (best explanation for reduce())](https://youtu.be/zdp0zrpKzIE?t=1111)
 
+## Other related topics
+- [Map](./map.md) 
+- [Filter](./filter.md) 
+- [Reduce](./reduce.md) 
+- [Reduce with Initial value](./reduce%20with%20initial%20value.md)

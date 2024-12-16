@@ -211,3 +211,7 @@ xhr.onerror = function() {
 ## Reference
 To know more about XMLHttpRequest in JavaScript, visit:
 - [YouTube](https://www.youtube.com/watch?v=BpXIFWGj9qE&list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&index=116)
+
+## Other related topics
+- [Load vs Onload](./LoadVsOnload.md) 
+- [Async vs SyncHMLHttpRequest](./AsyncVsSyncXMLHttpRequest.md)
