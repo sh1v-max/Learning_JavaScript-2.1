@@ -112,7 +112,7 @@ Topics in detail:
 
 | S No.    | Topics                         |
 |-------------------------------|----------------------------------|
-|1| [Data types](./01_Data-Types-In-JS/README.md) |
+|1| [Data types](./JS//01_Data-Types-In-JS/README.md) |
 |2| [Variables](./02_Variables-In-JS/README.md) |
 |3| [Code Execution](./03_Code-Execution-JS/README.md) |
 |4| [Dialogue boxes](./04_Dialog-Boxes-In-JS/README.md) |
