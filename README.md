@@ -203,6 +203,7 @@ Topics in detail:
 |2|[Higher Order Functions](./84_Othr-Topics-JS/HOF.md)|
 |2|[Map, Filter, and Reduce](./38_MAP-in-JS/README.md)|
 |2|[IIFE](./84_Othr-Topics-JS/IIF.md)|
+|3|[Closures](./84_Othr-Topics-JS/closures.md)|
 |2|[Regular Expressions](./84_Othr-Topics-JS/ReegEX.md)|
 ## Conclusion
 JavaScript has come a long way from its inception as a browser scripting language to becoming one of the most versatile and widely used programming languages in the world. Its adaptability, continuous evolution, and massive ecosystem make it an indispensable tool for modern development. Whether you're building web pages, mobile apps, or server-side applications, JavaScript has you covered.
