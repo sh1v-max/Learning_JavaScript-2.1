@@ -111,7 +111,7 @@ A JavaScript engine is a program or interpreter that executes JavaScript code. E
 Topics in detail:
 
 | S No.    | Topics                         |
-|-------------------------------|----------------------------------|
+|----------|--------------------------------|
 |1| [Data types](./01_Data-Types-In-JS/README.md) |
 |2| [Variables](./02_Variables-In-JS/README.md) |
 |3| [Code Execution](./03_Code-Execution-JS/README.md) |
@@ -150,7 +150,7 @@ Topics in detail:
 |35| [Arrow Function](./35_Arrow-Function-JS/README.md)|
 |36| [For-in vs For-of Loop](./36_For-in-VS-For-of-Loop-JS/README.md)|
 |37| [ForEach Array Method](./37_ForEach-Array-method-JS/README.md)|
-|38| [Map in JS](./38_MAP-in-JS/README.md)|
+|38| [Map, Filter, and Reduce in JS](./38_MAP-in-JS/README.md)|
 |39| [Some and Every in JS](./39_Some-and-Every-in-JS/README.md)|
 |40| [Argument Object in JS](./40_Argument-Object-In-JS/README.md)|
 |41| [Default Parameters](./41_Default-Parameters-JS/README.md)|
@@ -197,8 +197,13 @@ Topics in detail:
 |82| [This Keyword in JS](./82_This-Keyword-in-JS/README.md)|
 |83| [Dates in JS](./83_Dates-in-JS/README.md)|
 
-
-
+| S No.    | Other Topics                         |
+|----------|--------------------------------------|
+|1|[Debugging and Throttling](./84_Othr-Topics-JS/DebuggingAndThrottlingInJS.md)|
+|2|[Higher Order Functions](./84_Othr-Topics-JS/HOF.md)|
+|2|[Map, Filter, and Reduce](./38_MAP-in-JS/README.md)|
+|2|[IIFE](./84_Othr-Topics-JS/IIF.md)|
+|2|[Regular Expressions](./84_Othr-Topics-JS/ReegEX.md)|
 ## Conclusion
 JavaScript has come a long way from its inception as a browser scripting language to becoming one of the most versatile and widely used programming languages in the world. Its adaptability, continuous evolution, and massive ecosystem make it an indispensable tool for modern development. Whether you're building web pages, mobile apps, or server-side applications, JavaScript has you covered.
 
