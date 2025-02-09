@@ -9,6 +9,7 @@
 - In event bubbling, the event starts from the target element (the element that triggered the event) and bubbles up to the root of the DOM tree.
 - The innermost element handles the event first, followed by its parent elements.
 
+
 ### Example Structure
 ```html
 <div id="parent">
